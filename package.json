@@ -5,7 +5,6 @@
   "main": "dist/main.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack/webpack.dev.js",
-    "build:example": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.dev.js",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "standard 'src/**/*.js' --verbose | snazzy",
     "lint:styles": "stylelint 'src/**/*.js'",
