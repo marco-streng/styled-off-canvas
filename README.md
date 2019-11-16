@@ -25,7 +25,7 @@ styled-off-canvas is a customizable off-canvas menu built with [React](https://r
 
 ## Demo
 
-A demo can be found here: <a target="_blank" href="https://www.styled-components.com/">Demo</a>
+A demo can be found here: <a href="http://marcostreng.com/styled-off-canvas">Demo</a>
 
 
 ## Implementation
