@@ -54,7 +54,7 @@ For more flexibility you will keep the menu state (open or closed) in your appli
 
 ```javascript
 import React, { useState } from 'react'
-import { Menu, Overlay } from 'marco-streng/styled-off-canvas'
+import { Menu, Overlay } from 'styled-off-canvas'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false)
