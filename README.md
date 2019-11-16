@@ -60,7 +60,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <Styled>
+    <>
       <button onClick={() => setIsOpen(!isOpen)}>Toggle menu</button>
 
       <Menu isOpen={isOpen}>
@@ -82,12 +82,12 @@ const App = () => {
         isOpen={isOpen}
       />
 
-      <Center>this is some nice content!</Center>
-    </Styled>
+      <div>this is some nice content!</div>
+    </>
   )
 }
 
-export default hot(App)
+export default App
 ```
 
 ### Properties
