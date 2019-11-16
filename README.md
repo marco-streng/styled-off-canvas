@@ -11,6 +11,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/marco-streng/styled-off-canvas/actions">
+    <img alt="Node CI build status" src="https://github.com/marco-streng/styled-off-canvas/workflows/Node%20CI/badge.svg">
+  </a>
   <a href="https://standardjs.com">
     <img alt="JavaScript Standard Style" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
   </a>
