@@ -20,6 +20,9 @@
   <a href="https://www.styled-components.com/">
     <img alt="Built with Styled Components" src="https://img.shields.io/badge/built%20with-styled%20components-db7093.svg">
   </a>
+  <a href="https://dependabot.com">
+    <img alt="Dependabot Status" src="https://api.dependabot.com/badges/status?host=github&repo=marco-streng/styled-off-canvas">
+  </a>
 </p>
 
 ## Description
