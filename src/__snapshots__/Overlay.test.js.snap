@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay closed 1`] = `
+<div
+  className="Overlay-sc-7f8d3g-0 fLCqgd"
+/>
+`;
+
+exports[`Overlay custom color 1`] = `
+<div
+  className="Overlay-sc-7f8d3g-0 cLWEhw"
+  color="#ccc"
+/>
+`;
+
+exports[`Overlay custom duration 1`] = `
+<div
+  className="Overlay-sc-7f8d3g-0 cwxSPI"
+/>
+`;
+
+exports[`Overlay custom opacity 1`] = `
+<div
+  className="Overlay-sc-7f8d3g-0 epgdHV"
+  opacity={0.5}
+/>
+`;
+
+exports[`Overlay default 1`] = `
+<div
+  className="Overlay-sc-7f8d3g-0 kBsexC"
+/>
+`;

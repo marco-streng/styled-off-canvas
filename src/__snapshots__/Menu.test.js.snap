@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu closed 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 cClSYa"
+  color="#fff"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu custom color 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 eJPnTD"
+  color="#000"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu custom duration 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 cVpCir"
+  color="#fff"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu default 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 fbRzRZ"
+  color="#fff"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu position left 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 dsDlrd"
+  color="#fff"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu position left closed 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 kNLZYB"
+  color="#fff"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
