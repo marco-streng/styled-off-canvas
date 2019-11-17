@@ -100,6 +100,7 @@ export default App
 * `isOpen = false`: if the menu should be visible or not
 * `color = #fff`: background color
 * `duration = 500ms`: duration of the css transition
+* `onEsc`: Callback which is triggered on `esc` keydown
 * `position = right`: position of the menu (`left` or `right`)
 * `width = 300px`: maximum width of the menu
 

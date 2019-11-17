@@ -45,7 +45,10 @@ const App = () => {
 
       <GitHub />
 
-      <Menu isOpen={isOpen}>
+      <Menu
+        onEsc={() => setIsOpen(false)}
+        isOpen={isOpen}
+      >
         <>
           <Close onClose={() => setIsOpen(false)} />
           <List />

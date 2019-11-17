@@ -34,6 +34,39 @@ describe('Menu', () => {
     expect(tree).toMatchSnapshot()
   })
 
+  test('onEsc callback', () => {
+    const cb = jest.fn()
+    const component = renderer(<Menu onEsc={cb} isOpen><div>content</div></Menu>)
+    component.update()
+
+    const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 27 })
+    document.dispatchEvent(escKeyDown)
+
+    expect(cb).toHaveBeenCalled()
+  })
+
+  test('onEsc callback when closed', () => {
+    const cb = jest.fn()
+    const component = renderer(<Menu onEsc={cb}><div>content</div></Menu>)
+    component.update()
+
+    const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 27 })
+    document.dispatchEvent(escKeyDown)
+
+    expect(cb).not.toHaveBeenCalled()
+  })
+
+  test('onEsc callback with another key', () => {
+    const cb = jest.fn()
+    const component = renderer(<Menu onEsc={cb} isOpen><div>content</div></Menu>)
+    component.update()
+
+    const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 99 })
+    document.dispatchEvent(escKeyDown)
+
+    expect(cb).not.toHaveBeenCalled()
+  })
+
   test('body styling', () => {
     const component = renderer(<Menu isOpen><div>content</div></Menu>)
 

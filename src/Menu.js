@@ -34,6 +34,7 @@ const initalBodyStyle = {
  * @param   {string}    color     background color of the menu
  * @param   {string}    duration  duration of the open/close animation
  * @param   {boolean}   isOpen    if menu is open or not
+ * @param   {function}  onEsc     Callback function which is triggered on 'esc' keydown
  * @param   {string}    position  position of the menu ('left' or 'right')
  * @param   {string}    width     maximum width of the menu
  * @returns {component}           React component
@@ -44,6 +45,7 @@ const Menu = ({
   color = '#fff',
   duration = '500ms',
   isOpen,
+  onEsc,
   position = 'right',
   width = '300px'
 }) => {
@@ -59,6 +61,18 @@ const Menu = ({
       bodyElStyle.overflow = initalBodyStyle.overflow
     }
   }, [isOpen])
+
+  if (onEsc) {
+    useEffect(() => {
+      const handleKeyDown = ({ keyCode }) => {
+        if (keyCode === 27) onEsc()
+      }
+
+      isOpen
+        ? document.addEventListener('keydown', handleKeyDown)
+        : document.removeEventListener('keydown', handleKeyDown)
+    }, [isOpen])
+  }
 
   return (
     <Container
@@ -79,6 +93,7 @@ Menu.propTypes = {
   className: PropTypes.object,
   duration: PropTypes.string,
   isOpen: PropTypes.bool,
+  onEsc: PropTypes.func,
   position: PropTypes.oneOf(['left', 'right']),
   width: PropTypes.string
 }
