@@ -1,7 +1,10 @@
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Overlay = styled.div(({ color, opacity, duration, isOpen }) => `
+import Context from './Context'
+
+const Div = styled.div(({ color, opacity, duration, isOpen }) => `
   background: ${color || '#000'};
   height: 100%;
   left: 0;
@@ -13,10 +16,15 @@ const Overlay = styled.div(({ color, opacity, duration, isOpen }) => `
   z-index: ${isOpen ? 1 : -1};
 `)
 
+const Overlay = (props) => {
+  const { isOpen } = useContext(Context)
+
+  return <Div {...props} isOpen={isOpen} />
+}
+
 Overlay.propTypes = {
   color: PropTypes.string,
   duration: PropTypes.string,
-  isOpen: PropTypes.bool,
   opacity: PropTypes.number
 }
 

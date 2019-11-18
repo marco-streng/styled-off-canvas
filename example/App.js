@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import { Menu as BurgerIcon } from 'styled-icons/remix-fill/Menu'
 
-import { Menu, Overlay } from '../src/'
+import { Menu, Overlay, StyledOffCanvas } from '../src/'
 
 import List from './components/List'
 import Close from './components/Close'
@@ -30,35 +30,33 @@ const App = () => {
 
   return (
     <Container>
-      <GlobalStyle whiteColor />
-
-      <BurgerIcon
-        size={48}
-        css={{
-          background: '#fff',
-          borderRadius: '6px',
-          padding: '8px',
-          cursor: 'pointer'
-        }}
-        onClick={() => setIsOpen(!isOpen)}
-      />
-
-      <GitHub />
-
-      <Menu
+      <GlobalStyle />
+      <StyledOffCanvas
+        isOpen={isOpen}
         onEsc={() => setIsOpen(false)}
-        isOpen={isOpen}
       >
-        <>
-          <Close onClose={() => setIsOpen(false)} />
-          <List />
-        </>
-      </Menu>
+        <BurgerIcon
+          size={48}
+          css={{
+            background: '#fff',
+            borderRadius: '6px',
+            padding: '8px',
+            cursor: 'pointer'
+          }}
+          onClick={() => setIsOpen(!isOpen)}
+        />
 
-      <Overlay
-        onClick={() => setIsOpen(false)}
-        isOpen={isOpen}
-      />
+        <GitHub />
+
+        <Menu>
+          <>
+            <Close onClose={() => setIsOpen(false)} />
+            <List />
+          </>
+        </Menu>
+
+        <Overlay onClick={() => setIsOpen(false)} />
+      </StyledOffCanvas>
     </Container>
   )
 }

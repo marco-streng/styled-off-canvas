@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
+import Context from './Context'
 
 const Container = styled.div(({
   color,
@@ -33,9 +35,6 @@ const initalBodyStyle = {
  * @param   {string}    className styled-components className for custom styling
  * @param   {string}    color     background color of the menu
  * @param   {string}    duration  duration of the open/close animation
- * @param   {boolean}   isOpen    if menu is open or not
- * @param   {function}  onEsc     Callback function which is triggered on 'esc' keydown
- * @param   {string}    position  position of the menu ('left' or 'right')
  * @param   {string}    width     maximum width of the menu
  * @returns {component}           React component
  */
@@ -44,11 +43,10 @@ const Menu = ({
   className,
   color = '#fff',
   duration = '500ms',
-  isOpen,
-  onEsc,
-  position = 'right',
   width = '300px'
 }) => {
+  const { isOpen, onEsc, position } = useContext(Context)
+
   // Avoid scrolling on content when the navigation is open
   useEffect(() => {
     const bodyElStyle = document.body.style
@@ -92,9 +90,6 @@ Menu.propTypes = {
   children: PropTypes.element.isRequired,
   className: PropTypes.object,
   duration: PropTypes.string,
-  isOpen: PropTypes.bool,
-  onEsc: PropTypes.func,
-  position: PropTypes.oneOf(['left', 'right']),
   width: PropTypes.string
 }
 
