@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <Container>
-      <GlobalStyle whiteColor />
+      <GlobalStyle />
 
       <BurgerIcon
         size={48}
