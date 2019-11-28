@@ -47,7 +47,9 @@ For more flexibility you will keep the menu state (open or closed) in your appli
 
 ### Components
 
-`styled-off-canvas` comes with two components: `<Menu />` and `<Overlay />`.
+`styled-off-canvas` comes with three components: `<StyledOffCanvas />`, `<Menu />` and `<Overlay />`.
+
+`<StyledOffCanvas />` is a wrapping component which provides all settings/properties.
 
 `<Menu />` is the off-canvas menu itself. You can pass anything you want as children (e.g. styled list of react-router links)
 
@@ -57,16 +59,20 @@ For more flexibility you will keep the menu state (open or closed) in your appli
 
 ```javascript
 import React, { useState } from 'react'
-import { Menu, Overlay } from 'styled-off-canvas'
+import { StyledOffCanvas, Menu, Overlay } from 'styled-off-canvas'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <>
+    <StyledOffCanvas
+      isOpen={isOpen}
+      onClose={() => setIsOpen(false)}
+    >
+
       <button onClick={() => setIsOpen(!isOpen)}>Toggle menu</button>
 
-      <Menu isOpen={isOpen}>
+      <Menu>
         <ul>
           <li>
             <a onClick={() => setIsOpen(false)}>close</a>
@@ -80,13 +86,10 @@ const App = () => {
         </ul>
       </Menu>
 
-      <Overlay
-        onClick={() => setIsOpen(false)}
-        isOpen={isOpen}
-      />
+      <Overlay />
 
       <div>this is some nice content!</div>
-    </>
+    </StyledOffCanvas>
   )
 }
 
@@ -95,23 +98,20 @@ export default App
 
 ### Properties
 
-`<Menu />` component
+`<StyledOffCanvas />` component
 
-* `isOpen = false`: if the menu should be visible or not
-* `color = #fff`: background color
-* `duration = 500ms`: duration of the css transition
-* `onEsc`: Callback which is triggered on `esc` keydown
-* `position = right`: position of the menu (`left` or `right`)
-* `width = 300px`: maximum width of the menu
+* `isOpen = false`:  if the menu should be visible or not
+* `menuBackground = '#fff'`: background color of the menu
+* `menuDuration = '500ms'`: duration of the css transition of the menu
+* `onClose`: callback function if menu closes (e.g. by click on the overlay)
+* `closeOnEsc = true`: if the menu should close on esc keydown
+* `overlayBackground = '#000'`: background color of the overlay
+* `overlayDuration = '500ms'`: duration of the open/close animation of the overlay
+* `overlayOpacity = 0.2`: css opacity of the overlay
+* `position = 'right'`: position of the menu (`left` or `right`)
+* `width = '300px'`: maximum width of the menu
 
-`<Overlay />` component
-
-* `isOpen = false`: if the overlay should be visible or not
-* `color = #000`: color of the overlay
-* `opacity = 0.2`: opacity of the overlay
-* `duration = 500ms`: duration of the css transition
-
-Both components can additionally be customized with styled-components
+Also `<Menu />` and `<Overlay />` can additionally be customized with styled-components
 
 ```jsx
 // example
