@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import Context from './Context'
+
 const Container = styled.div(({
-  color,
+  background,
   duration,
   isOpen,
   position,
   width
 }) => `
-  background-color: ${color}
+  background-color: ${background}
   height: 100%;
   left: ${position === 'left' ? isOpen ? 0 : '-100%' : 'inherit'};
   max-width: ${width};
@@ -31,24 +33,14 @@ const initalBodyStyle = {
  * Menu component
  *
  * @param   {string}    className styled-components className for custom styling
- * @param   {string}    color     background color of the menu
- * @param   {string}    duration  duration of the open/close animation
- * @param   {boolean}   isOpen    if menu is open or not
- * @param   {function}  onEsc     Callback function which is triggered on 'esc' keydown
- * @param   {string}    position  position of the menu ('left' or 'right')
- * @param   {string}    width     maximum width of the menu
  * @returns {component}           React component
  */
 const Menu = ({
   children,
-  className,
-  color = '#fff',
-  duration = '500ms',
-  isOpen,
-  onEsc,
-  position = 'right',
-  width = '300px'
+  className
 }) => {
+  const { isOpen, menuBackground, menuDuration, closeOnEsc, onClose, position, width } = useContext(Context)
+
   // Avoid scrolling on content when the navigation is open
   useEffect(() => {
     const bodyElStyle = document.body.style
@@ -62,10 +54,10 @@ const Menu = ({
     }
   }, [isOpen])
 
-  if (onEsc) {
+  if (closeOnEsc) {
     useEffect(() => {
       const handleKeyDown = ({ keyCode }) => {
-        if (keyCode === 27) onEsc()
+        if (keyCode === 27) onClose()
       }
 
       isOpen
@@ -77,8 +69,8 @@ const Menu = ({
   return (
     <Container
       className={className}
-      color={color}
-      duration={duration}
+      background={menuBackground}
+      duration={menuDuration}
       isOpen={isOpen}
       position={position}
       width={width}
@@ -90,12 +82,7 @@ const Menu = ({
 
 Menu.propTypes = {
   children: PropTypes.element.isRequired,
-  className: PropTypes.object,
-  duration: PropTypes.string,
-  isOpen: PropTypes.bool,
-  onEsc: PropTypes.func,
-  position: PropTypes.oneOf(['left', 'right']),
-  width: PropTypes.string
+  className: PropTypes.object
 }
 
 export default Menu
