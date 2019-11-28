@@ -1,42 +1,43 @@
 import React from 'react'
 import renderer from './helper/tests/jest'
 
+import Provider from './Provider'
 import Menu from './Menu'
 
 describe('Menu', () => {
   test('default', () => {
-    const tree = renderer(<Menu isOpen><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}} isOpen><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('closed', () => {
-    const tree = renderer(<Menu isOpen={false}><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}}><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('custom color', () => {
-    const tree = renderer(<Menu isOpen color='#000'><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}} isOpen menuBackground='#000'><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('custom duration', () => {
-    const tree = renderer(<Menu isOpen duration='1s'><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}} isOpen duration='1s'><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('position left', () => {
-    const tree = renderer(<Menu isOpen position='left'><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}} isOpen position='left'><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('position left closed', () => {
-    const tree = renderer(<Menu isOpen={false} position='left'><div>content</div></Menu>).toJSON()
+    const tree = renderer(<Provider onClose={() => {}} position='left'><Menu><div>content</div></Menu></Provider>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
-  test('onEsc callback', () => {
+  test('closeOnEsc callback', () => {
     const cb = jest.fn()
-    const component = renderer(<Menu onEsc={cb} isOpen><div>content</div></Menu>)
+    const component = renderer(<Provider isOpen onClose={cb}><Menu><div>content</div></Menu></Provider>)
     component.update()
 
     const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 27 })
@@ -45,9 +46,9 @@ describe('Menu', () => {
     expect(cb).toHaveBeenCalled()
   })
 
-  test('onEsc callback when closed', () => {
+  test('closeOnEsc callback when closed', () => {
     const cb = jest.fn()
-    const component = renderer(<Menu onEsc={cb}><div>content</div></Menu>)
+    const component = renderer(<Provider onClose={cb}><Menu><div>content</div></Menu></Provider>)
     component.update()
 
     const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 27 })
@@ -56,9 +57,9 @@ describe('Menu', () => {
     expect(cb).not.toHaveBeenCalled()
   })
 
-  test('onEsc callback with another key', () => {
+  test('closeOnEsc callback with another key', () => {
     const cb = jest.fn()
-    const component = renderer(<Menu onEsc={cb} isOpen><div>content</div></Menu>)
+    const component = renderer(<Provider isOpen onClose={cb}><Menu><div>content</div></Menu></Provider>)
     component.update()
 
     const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 99 })
@@ -67,8 +68,19 @@ describe('Menu', () => {
     expect(cb).not.toHaveBeenCalled()
   })
 
+  test('without closeOnEsc', () => {
+    const cb = jest.fn()
+    const component = renderer(<Provider closeOnEsc={false} isOpen onClose={cb}><Menu><div>content</div></Menu></Provider>)
+    component.update()
+
+    const escKeyDown = new window.KeyboardEvent('keydown', { keyCode: 27 })
+    document.dispatchEvent(escKeyDown)
+
+    expect(cb).not.toHaveBeenCalled()
+  })
+
   test('body styling', () => {
-    const component = renderer(<Menu isOpen><div>content</div></Menu>)
+    const component = renderer(<Provider onClose={() => {}} isOpen><Menu><div>content</div></Menu></Provider>)
 
     component.update()
     expect(document.body.style._values).toEqual({
@@ -76,7 +88,7 @@ describe('Menu', () => {
       overflow: 'hidden'
     })
 
-    component.update(<Menu><div>content</div></Menu>)
+    component.update(<Provider onClose={() => {}}><Menu><div>content</div></Menu></Provider>)
     component.update()
     expect(document.body.style._values).toEqual({})
   })

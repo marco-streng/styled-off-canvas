@@ -5,13 +5,13 @@ import styled from 'styled-components'
 import Context from './Context'
 
 const Container = styled.div(({
-  color,
+  background,
   duration,
   isOpen,
   position,
   width
 }) => `
-  background-color: ${color}
+  background-color: ${background}
   height: 100%;
   left: ${position === 'left' ? isOpen ? 0 : '-100%' : 'inherit'};
   max-width: ${width};
@@ -33,19 +33,13 @@ const initalBodyStyle = {
  * Menu component
  *
  * @param   {string}    className styled-components className for custom styling
- * @param   {string}    color     background color of the menu
- * @param   {string}    duration  duration of the open/close animation
- * @param   {string}    width     maximum width of the menu
  * @returns {component}           React component
  */
 const Menu = ({
   children,
-  className,
-  color = '#fff',
-  duration = '500ms',
-  width = '300px'
+  className
 }) => {
-  const { isOpen, onEsc, position } = useContext(Context)
+  const { isOpen, menuBackground, menuDuration, closeOnEsc, onClose, position, width } = useContext(Context)
 
   // Avoid scrolling on content when the navigation is open
   useEffect(() => {
@@ -60,10 +54,10 @@ const Menu = ({
     }
   }, [isOpen])
 
-  if (onEsc) {
+  if (closeOnEsc) {
     useEffect(() => {
       const handleKeyDown = ({ keyCode }) => {
-        if (keyCode === 27) onEsc()
+        if (keyCode === 27) onClose()
       }
 
       isOpen
@@ -75,8 +69,8 @@ const Menu = ({
   return (
     <Container
       className={className}
-      color={color}
-      duration={duration}
+      background={menuBackground}
+      duration={menuDuration}
       isOpen={isOpen}
       position={position}
       width={width}
@@ -88,9 +82,7 @@ const Menu = ({
 
 Menu.propTypes = {
   children: PropTypes.element.isRequired,
-  className: PropTypes.object,
-  duration: PropTypes.string,
-  width: PropTypes.string
+  className: PropTypes.object
 }
 
 export default Menu

@@ -31,9 +31,10 @@ const App = () => {
   return (
     <Container>
       <GlobalStyle />
+
       <StyledOffCanvas
         isOpen={isOpen}
-        onEsc={() => setIsOpen(false)}
+        onClose={() => setIsOpen(false)}
       >
         <BurgerIcon
           size={48}
@@ -50,12 +51,12 @@ const App = () => {
 
         <Menu>
           <>
-            <Close onClose={() => setIsOpen(false)} />
+            <Close />
             <List />
           </>
         </Menu>
 
-        <Overlay onClick={() => setIsOpen(false)} />
+        <Overlay />
       </StyledOffCanvas>
     </Container>
   )

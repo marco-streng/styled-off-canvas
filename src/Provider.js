@@ -3,12 +3,46 @@ import PropTypes from 'prop-types'
 
 import Context from './Context'
 
-const Provider = ({ isOpen, onEsc, position = 'right', children }) => (
+/**
+ * Provider component
+ *
+ * @param   {boolean}   isOpen            if the menu should be visible or not
+ * @param   {string}    menuBackground    background color of the menu
+ * @param   {string}    menuDuration      duration of the open/close animation for the menu
+ * @param   {function}  onClose           callback function if menu closes
+ * @param   {boolean}   closeOnEsc        if the menu should close on esc keydown
+ * @param   {string}    overlayBackground background color of the menu
+ * @param   {string}    overlayDuration   duration of the open/close animation for the overlay
+ * @param   {string}    overlayOpacity    opacity of the overlay
+ * @param   {string}    position          position of the menu (left or right)
+ * @param   {string}    width             maximum width of the menu
+ * @returns {component}                   React component
+ */
+const Provider = ({
+  children,
+  isOpen = false,
+  menuBackground = '#fff',
+  menuDuration = '500ms',
+  onClose,
+  closeOnEsc = true,
+  overlayBackground = '#000',
+  overlayDuration = '500ms',
+  overlayOpacity = 0.2,
+  position = 'right',
+  width = '300px'
+}) => (
   <Context.Provider
     value={{
       isOpen,
-      onEsc,
-      position
+      menuDuration,
+      menuBackground,
+      onClose,
+      closeOnEsc,
+      overlayBackground,
+      overlayDuration,
+      overlayOpacity,
+      position,
+      width
     }}
   >
     {children}
@@ -16,9 +50,16 @@ const Provider = ({ isOpen, onEsc, position = 'right', children }) => (
 )
 
 Provider.propTypes = {
+  closeOnEsc: PropTypes.bool,
   isOpen: PropTypes.bool,
-  onEsc: PropTypes.func,
-  position: PropTypes.oneOf(['left', 'right'])
+  menuBackground: PropTypes.string,
+  menuDuration: PropTypes.string,
+  onClose: PropTypes.func.isRequired,
+  overlayBackground: PropTypes.string,
+  overlayDuration: PropTypes.string,
+  overlayOpacity: PropTypes.number,
+  position: PropTypes.oneOf(['left', 'right']),
+  width: PropTypes.string
 }
 
 export default Provider
