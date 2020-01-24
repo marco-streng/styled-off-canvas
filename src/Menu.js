@@ -11,7 +11,7 @@ const Container = styled.div(({
   position,
   width
 }) => `
-  background-color: ${background}
+  background-color: ${background};
   height: 100%;
   left: ${position === 'left' ? isOpen ? 0 : '-100%' : 'inherit'};
   max-width: ${width};
@@ -40,7 +40,6 @@ const Menu = ({
   className
 }) => {
   const { isOpen, menuBackground, menuDuration, closeOnEsc, onClose, position, width } = useContext(Context)
-
   // Avoid scrolling on content when the navigation is open
   useEffect(() => {
     const bodyElStyle = document.body.style

@@ -60,7 +60,7 @@
     "snazzy": "^8.0.0",
     "standard": "^14.3.1",
     "standard-loader": "^7.0.0",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.0",
     "styled-icons": "^9.0.1",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0",
