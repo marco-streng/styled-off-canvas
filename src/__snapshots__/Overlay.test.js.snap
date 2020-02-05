@@ -2,7 +2,7 @@
 
 exports[`Overlay closed 1`] = `
 <div
-  className="Overlay__Div-sc-7f8d3g-0 kzOERp"
+  className="Overlay__Div-sc-7f8d3g-0 dkqBvm"
   onClick={[Function]}
   opacity={0.2}
 />
@@ -10,7 +10,7 @@ exports[`Overlay closed 1`] = `
 
 exports[`Overlay custom color 1`] = `
 <div
-  className="Overlay__Div-sc-7f8d3g-0 jAJZES"
+  className="Overlay__Div-sc-7f8d3g-0 IkUnD"
   onClick={[Function]}
   opacity={0.2}
 />
@@ -18,7 +18,7 @@ exports[`Overlay custom color 1`] = `
 
 exports[`Overlay custom duration 1`] = `
 <div
-  className="Overlay__Div-sc-7f8d3g-0 pXJUL"
+  className="Overlay__Div-sc-7f8d3g-0 eYfega"
   onClick={[Function]}
   opacity={0.2}
 />
@@ -26,7 +26,7 @@ exports[`Overlay custom duration 1`] = `
 
 exports[`Overlay custom opacity 1`] = `
 <div
-  className="Overlay__Div-sc-7f8d3g-0 bnJqVv"
+  className="Overlay__Div-sc-7f8d3g-0 jNYFAE"
   onClick={[Function]}
   opacity={0.5}
 />
@@ -34,7 +34,7 @@ exports[`Overlay custom opacity 1`] = `
 
 exports[`Overlay default 1`] = `
 <div
-  className="Overlay__Div-sc-7f8d3g-0 eTgugM"
+  className="Overlay__Div-sc-7f8d3g-0 fdogRv"
   onClick={[Function]}
   opacity={0.2}
 />
