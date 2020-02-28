@@ -1,14 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
+const BUILD_FOLDER = 'build'
 
 module.exports = {
   entry: [
     'core-js/stable',
     './example/index.js'
   ],
-  mode: 'development',
-  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {
@@ -32,22 +33,12 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
-  },
   devServer: {
     hot: true,
     open: true
   },
-  // output: {
-  //   path: path.join(__dirname, '..', '..', BUILD_FOLDER)
-  // },
   output: {
-    pathinfo: true,
-    filename: 'static/js/bundle.js',
-    chunkFilename: 'static/js/[name].chunk.js'
+    path: path.join(__dirname, '..', '..', BUILD_FOLDER)
   },
   plugins: [
     new CleanWebpackPlugin(),
