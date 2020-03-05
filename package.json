@@ -62,7 +62,7 @@
     "standard": "^14.3.1",
     "standard-loader": "^7.0.0",
     "styled-components": "^5.0.0",
-    "styled-icons": "^9.0.1",
+    "styled-icons": "^10.1.0",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-config-styled-components": "^0.1.1",

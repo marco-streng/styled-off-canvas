@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Github } from 'styled-icons/remix-fill/Github'
+import { Github } from '@styled-icons/remix-fill/Github'
 
 const Icon = styled(Github)`
   bottom: 40px;

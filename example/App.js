@@ -1,7 +1,7 @@
 import { hot } from 'react-hot-loader/root'
 import React, { useState } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
-import { Menu as BurgerIcon } from 'styled-icons/remix-fill/Menu'
+import { Menu as BurgerIcon } from '@styled-icons/remix-fill/Menu'
 
 import { Menu, Overlay, StyledOffCanvas } from '../src/'
 
