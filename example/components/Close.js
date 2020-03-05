@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Close as CloseIcon } from 'styled-icons/remix-fill/Close'
+import { Close as CloseIcon } from '@styled-icons/remix-fill/Close'
 
 export default ({ onClose }) => (
   <div
