@@ -1119,6 +1119,22 @@
     "@styled-icons/styled-icon" "^10.0.0"
     tslib "^1.11.1"
 
+"@styled-icons/evaicons-outline@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/evaicons-outline/-/evaicons-outline-10.2.0.tgz#abe732247d44ab322542945a21b50d5234bb5679"
+  integrity sha512-TOPl//uVmDzbpDueQnNdie2jh7wjf1AwPxdbv/kEIHzxZyLcCZwHJGYC+zQfV6ByLWimaaPnUq7dAr0cD+lUTA==
+  dependencies:
+    "@styled-icons/styled-icon" "^10.0.0"
+    tslib "^1.11.1"
+
+"@styled-icons/evaicons-solid@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/evaicons-solid/-/evaicons-solid-10.2.0.tgz#ce8356c2a4f65189b50ec9e01c928ef9e751b7f5"
+  integrity sha512-Yd3F+jvjHkI8iqDnoqhg2sFyGe9+NVxFDfjmUKL3wBH8e59tPFAHzX3ATsCE3dGyFOWtvyaKc5mKf0PculvHSw==
+  dependencies:
+    "@styled-icons/styled-icon" "^10.0.0"
+    tslib "^1.11.1"
+
 "@styled-icons/evil@^10.0.0":
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/@styled-icons/evil/-/evil-10.0.0.tgz#20959764ec4619a3be3637cd5b7ead1eabda5f40"
@@ -8771,9 +8787,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.1.0.tgz#5ba9a1d53db2a538b6f33165464dea8a61bb0d0a"
-  integrity sha512-E0dssa4znTdK/awlQu9PtdEH3Skf6QZB0zfck5A3MgvzcaFP6DXo6lz5g7lFbjQBMABIXcuquMMnJZj1E+Zd7A==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.2.1.tgz#aef8e822bd7235377800b7cf8a76af2878c3c525"
+  integrity sha512-QzAJYhDpw+ouTUi1HU6cOwfBitWf5FhvBBZ8i2wGTdl6WnlOJOTaZpVpsyruhoyJyagbLg7snDMby8B7n74j2A==
   dependencies:
     "@styled-icons/boxicons-logos" "^10.0.0"
     "@styled-icons/boxicons-regular" "^10.0.0"
@@ -8781,6 +8797,8 @@ styled-icons@^10.1.0:
     "@styled-icons/crypto" "^10.0.0"
     "@styled-icons/entypo" "^10.0.0"
     "@styled-icons/entypo-social" "^10.0.0"
+    "@styled-icons/evaicons-outline" "^10.2.0"
+    "@styled-icons/evaicons-solid" "^10.2.0"
     "@styled-icons/evil" "^10.0.0"
     "@styled-icons/fa-brands" "^10.0.0"
     "@styled-icons/fa-regular" "^10.0.0"
