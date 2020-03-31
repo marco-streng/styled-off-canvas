@@ -44,14 +44,14 @@ const App = () => {
             padding: '8px',
             cursor: 'pointer'
           }}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => { setIsOpen((isOpen) => !isOpen) }}
         />
 
         <GitHub />
 
         <Menu>
           <>
-            <Close />
+            <Close onClose={() => setIsOpen(false)} />
             <List />
           </>
         </Menu>
