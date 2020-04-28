@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -24,9 +24,11 @@ const Container = styled.div(({
   z-index: 10;
 `)
 
+const isCSR = typeof window !== 'undefined'
+
 const initalBodyStyle = {
-  maxHeight: document.body.style.maxHeight,
-  overflow: document.body.style.overflow
+  maxHeight: isCSR ? window.document.body.style.maxHeight : 'none',
+  overflow: isCSR ? window.document.body.style.overflow : 'visbile'
 }
 
 /**
@@ -39,10 +41,10 @@ const Menu = ({
   children,
   className
 }) => {
-  const { isOpen, menuBackground, menuDuration, closeOnEsc, onClose, position, width } = useContext(Context)
+  const { isOpen, menuBackground, menuDuration, closeOnEsc, onClose, position, width } = React.useContext(Context)
   // Avoid scrolling on content when the navigation is open
-  useEffect(() => {
-    const bodyElStyle = document.body.style
+  React.useEffect(() => {
+    const bodyElStyle = window.document.body.style
 
     if (isOpen) {
       bodyElStyle.maxHeight = '100%'
@@ -54,14 +56,14 @@ const Menu = ({
   }, [isOpen])
 
   if (closeOnEsc) {
-    useEffect(() => {
+    React.useEffect(() => {
       const handleKeyDown = ({ keyCode }) => {
         if (keyCode === 27) onClose()
       }
 
       isOpen
-        ? document.addEventListener('keydown', handleKeyDown)
-        : document.removeEventListener('keydown', handleKeyDown)
+        ? window.document.addEventListener('keydown', handleKeyDown)
+        : window.document.removeEventListener('keydown', handleKeyDown)
     }, [isOpen])
   }
 

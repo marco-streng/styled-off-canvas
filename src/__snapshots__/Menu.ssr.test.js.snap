@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu ssr 1`] = `
+<div
+  className="Menu__Container-mw2r80-0 gYnSRY"
+  width="300px"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
