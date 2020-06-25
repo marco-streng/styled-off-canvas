@@ -1446,6 +1446,14 @@
     "@styled-icons/styled-icon" "^10.4.0"
     tslib "^2.0.0"
 
+"@styled-icons/simple-icons@^10.4.0":
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.4.0.tgz#c1fb07fe9646a2e91e19c68b4ecfbce123d2b38c"
+  integrity sha512-8bihuBbtW621i6yzVZ7VB323TtOkv5TTqw3qAp0SxuWcyab/sPAxJfIdfB2cMoX+YjBo7pX+PM3Owm0fBzvioQ==
+  dependencies:
+    "@styled-icons/styled-icon" "^10.4.0"
+    tslib "^2.0.0"
+
 "@styled-icons/styled-icon@^10.4.0":
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/@styled-icons/styled-icon/-/styled-icon-10.4.0.tgz#d6f4359bc099db159864b72445d3c6c0610f91dd"
@@ -8995,9 +9003,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.4.0.tgz#1d4fb04945887155308bcd6f265c8939415b3d1a"
-  integrity sha512-MXZgjT32wNQgPJI7IY7HE9leI95mS+KKGoATUuTd9EwSkUSl4hvKtsa+/LHkCEgUmGojWqAhn9W0Dpk+8ijhYw==
+  version "10.4.2"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.4.2.tgz#7c46c36f579b839291cea9a367d31ed1f4cf07e4"
+  integrity sha512-wAFlhNZ9PbxKSh/xkDx2wTbuqf5IKngqGtM417bfiXQwxLnu4tqzZ/5HH1zaYs9/wSjGxie8sVntqJJeg7xJIg==
   dependencies:
     "@styled-icons/boxicons-logos" "^10.4.0"
     "@styled-icons/boxicons-regular" "^10.4.0"
@@ -9028,6 +9036,7 @@ styled-icons@^10.1.0:
     "@styled-icons/open-iconic" "^10.4.0"
     "@styled-icons/remix-fill" "^10.4.0"
     "@styled-icons/remix-line" "^10.4.0"
+    "@styled-icons/simple-icons" "^10.4.0"
     "@styled-icons/styled-icon" "^10.4.0"
     "@styled-icons/typicons" "^10.4.0"
     "@styled-icons/zondicons" "^10.4.0"
