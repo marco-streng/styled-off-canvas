@@ -1389,12 +1389,12 @@
     "@babel/runtime" "^7.10.3"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/simple-icons@^10.6.0":
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.6.0.tgz#2c126eb0591284ff0c97e0d85a041a62caa354cd"
-  integrity sha512-8OW29byXdH7cvWXyNSb2BX5jchdU1+BlcQ1eKHi2aSrCx+Bb1Bh//FuqT0TPaub17Y4RZoo/MJlTxyC9Gj076g==
+"@styled-icons/simple-icons@^10.9.0":
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.9.0.tgz#0c6c37c79deb5eaac2a8267d35d78aeb9f4d0a72"
+  integrity sha512-wJxK8NG/jdGQQdoOknVE3Gbj0y0rrND0FrKisRH8mT3ArNi7MEByOhz4U2VrWitAXzGnoHUYxy1qRPno3VpdVA==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.10.4"
     "@styled-icons/styled-icon" "^10.6.0"
 
 "@styled-icons/styled-icon@^10.6.0":
@@ -8926,11 +8926,11 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.6.0.tgz#d71005131d25ba6d8bbb8b900b7cbfb0c5c8220b"
-  integrity sha512-V3X1ljBc43FXtprDEnZuwrMES2xSEgjVc4zLa1gGPWlB8ffr1tkZ9JhBnXsKOXDvTAwn+uFs9oUEQlDu21Sl+A==
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.9.0.tgz#dc30faedb3f111b0b96ca2edb4988c4e915063ad"
+  integrity sha512-Sz0gT0NxmQMq23gzgtn4N4Ka16PWwnv34yk5zOEt7GK2VdIhza6CjhtWTQeTCieKIWgm0KJbFkz5URXZt1QVaw==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.10.4"
     "@styled-icons/boxicons-logos" "^10.6.0"
     "@styled-icons/boxicons-regular" "^10.6.0"
     "@styled-icons/boxicons-solid" "^10.6.0"
@@ -8960,7 +8960,7 @@ styled-icons@^10.1.0:
     "@styled-icons/open-iconic" "^10.6.0"
     "@styled-icons/remix-fill" "^10.6.0"
     "@styled-icons/remix-line" "^10.6.0"
-    "@styled-icons/simple-icons" "^10.6.0"
+    "@styled-icons/simple-icons" "^10.9.0"
     "@styled-icons/styled-icon" "^10.6.0"
     "@styled-icons/typicons" "^10.6.0"
     "@styled-icons/zondicons" "^10.6.0"
