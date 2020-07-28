@@ -856,10 +856,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.10.4"
     "@babel/plugin-transform-react-pure-annotations" "^7.10.4"
 
-"@babel/runtime@^7.10.3", "@babel/runtime@^7.10.4", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4":
-  version "7.10.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.4.tgz#a6724f1a6b8d2f6ea5236dbfe58c7d7ea9c5eb99"
-  integrity sha512-UpTN5yUJr9b4EX2CnGNWIvER7Ab83ibv0pcvvHc4UOdrBI5jb8bj+32cCwPX6xu0mt2daFNjYhoi+X7beH0RSw==
+"@babel/runtime@^7.10.3", "@babel/runtime@^7.10.4", "@babel/runtime@^7.10.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
+  integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1269,20 +1269,20 @@
     "@babel/runtime" "^7.10.3"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/heroicons-outline@^10.6.0":
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/heroicons-outline/-/heroicons-outline-10.6.0.tgz#99c56f73dc6526f51286158b068971bd996b5173"
-  integrity sha512-vxt0wt1IbQgsWuAIce04/7Idg1w6VQ6fnqgZl1iw3e0eILgPQm0LvHdBz83cfkSSNpqsMXTJrbLz6SBnN17Ixw==
+"@styled-icons/heroicons-outline@^10.12.0":
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/heroicons-outline/-/heroicons-outline-10.12.0.tgz#51dc490e55aec5a858f37403a0fc51a27d9ed5db"
+  integrity sha512-Fk2yCehVTsYJXnc17vnT5HPB6x94PFPZrxVxvPnrej97tlTKu0muBNRmrovouQpVAed6gY1/sMmLHls1sz3O1g==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/heroicons-solid@^10.6.0":
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/heroicons-solid/-/heroicons-solid-10.6.0.tgz#d4ea3bd425432c6f98b1fba23ab67c354ccd1728"
-  integrity sha512-Fo2W/C9ClI2S8NqhUjhNvC9OOTGwhvNx8aiX2hInyVhFfDGtXpyG6jNlwbcMI46Uw/2KN/MUTTZjyN7kLlUBDA==
+"@styled-icons/heroicons-solid@^10.12.0":
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/heroicons-solid/-/heroicons-solid-10.12.0.tgz#5de79e08dcd68f846b850229369df7d579a4d61c"
+  integrity sha512-N0b0bLVcZ1YlMxxBlgHFGp3imsCQ+3jyUlVpx5x4Hv96eJGHAExLPUSl1jMdlHk6zLOjbsWAVo5T+kUqQmtMIA==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
 "@styled-icons/icomoon@^10.6.0":
@@ -8926,11 +8926,11 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.11.0.tgz#875c96dab3401e1db38bf4c028f6126c0e72dbb8"
-  integrity sha512-qeOZOIE8UFMktvuEOQhvWY3/CvXvBXFh9c+bs0cePRqCoP9DZZCIWB1HjXtnUtTnQfY0/aKjwBBYr65+ayCYsQ==
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.12.0.tgz#4f8e4d7f400a0f0975f7d2f7ea3112775589ed1d"
+  integrity sha512-bk8E4f7gYK93gq6JuDPVBd+zwIw0Ve/7toDIKukTr2KvZ0cB60VPeXWQEm+8nQvjPViLABr+ZP6P9nJIRwQcdQ==
   dependencies:
-    "@babel/runtime" "^7.10.4"
+    "@babel/runtime" "^7.10.5"
     "@styled-icons/boxicons-logos" "^10.6.0"
     "@styled-icons/boxicons-regular" "^10.6.0"
     "@styled-icons/boxicons-solid" "^10.6.0"
@@ -8945,8 +8945,8 @@ styled-icons@^10.1.0:
     "@styled-icons/fa-solid" "^10.10.0"
     "@styled-icons/feather" "^10.6.0"
     "@styled-icons/foundation" "^10.6.0"
-    "@styled-icons/heroicons-outline" "^10.6.0"
-    "@styled-icons/heroicons-solid" "^10.6.0"
+    "@styled-icons/heroicons-outline" "^10.12.0"
+    "@styled-icons/heroicons-solid" "^10.12.0"
     "@styled-icons/icomoon" "^10.6.0"
     "@styled-icons/ionicons-outline" "^10.6.0"
     "@styled-icons/ionicons-sharp" "^10.6.0"
