@@ -1198,6 +1198,14 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@styled-icons/bootstrap@^10.14.0":
+  version "10.14.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/bootstrap/-/bootstrap-10.14.1.tgz#380f5f6f81361e7167d0a3ded1361307c2c195e6"
+  integrity sha512-SKgBYBmN49aa3g3iFXLZzZ5kMO3exWkjTjOn8C8ykju4cf1lKiFfdfDz+QI/gs14EO9STrCjrEriOG8hEw6S+g==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@styled-icons/styled-icon" "^10.6.0"
+
 "@styled-icons/boxicons-logos@^10.6.0":
   version "10.6.0"
   resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-logos/-/boxicons-logos-10.6.0.tgz#ba17d2e761de2a9b04ffa2aa42358596316d6a69"
@@ -9023,11 +9031,12 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.13.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.13.0.tgz#6a2976791358edfbe250f5ae1804fe4a8d8a3da3"
-  integrity sha512-3GDplteqTqytx10VNWeBX4JABMoQG/0kfFBijleer4Hk1uNZReoNWV5e8HceysZON8HAdBBc59PrEuQlldt8FA==
+  version "10.14.1"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.14.1.tgz#9f45610db21405e3b1ec314935157afd14f4507b"
+  integrity sha512-UpAX+t0NVXw1fG6e2aZ86w7L8jR+6oaVmsSaPWbepL+EVgmyzAoyIYs2LMZBcQMdSgBHD+zUjbckP7cIKToK4w==
   dependencies:
     "@babel/runtime" "^7.10.5"
+    "@styled-icons/bootstrap" "^10.14.0"
     "@styled-icons/boxicons-logos" "^10.6.0"
     "@styled-icons/boxicons-regular" "^10.6.0"
     "@styled-icons/boxicons-solid" "^10.6.0"
