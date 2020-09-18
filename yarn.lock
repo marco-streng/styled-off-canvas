@@ -1413,10 +1413,10 @@
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/octicons@^10.18.0":
-  version "10.18.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.18.0.tgz#bba1b696437a8c8558264bd0f6ecd5128cfbe718"
-  integrity sha512-NfBw3UwAooRR4g5BwSXwGBALC4rY+10nNlkbz+UrNij8Nn1GA831l8rbuOXHwGeWUeTyJP0A9UBAScwDlno8VA==
+"@styled-icons/octicons@^10.20.0":
+  version "10.20.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.20.0.tgz#f90b908cbf4463d2f57ef62eb7ee9fbe1c67c1cb"
+  integrity sha512-rgy3/+pw2beMMZOhw/Rf5xbfivjJmq9nqKayPddssW/cz4j15PdJharUeMxj+BDLJ3ItQF4ezsrcQwdeHs8eqg==
   dependencies:
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
@@ -1445,10 +1445,10 @@
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/simple-icons@^10.18.0":
-  version "10.18.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.18.0.tgz#74aff4979452afb2c1876259fd9c60aecb485fdf"
-  integrity sha512-MfMYqJeUM1QvWWZVPW88Nhcp0LFSFohUgvEIVko9wJ7w1kmMUnjPqmOQZtrjlnh+erkX3QwnzzNI6dyM6o0yrg==
+"@styled-icons/simple-icons@^10.21.0":
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.21.0.tgz#db8558172f3693ecf3309626718ad5e069650dbe"
+  integrity sha512-fbd+KMETkBw/ZeSf0KyRdLpwRqpcSSJWhv5dLnZnDlj+a1aIRDZZl+eQ2BBgPJYzdXIx4fYP+l3kGugNPy1eyA==
   dependencies:
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
@@ -9125,9 +9125,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.19.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.19.0.tgz#28cf9f4d4122276822f9a284575ed98ab01dac21"
-  integrity sha512-q0Fw0A6EdlEJxYA1Oql97eIcC3YA9JMEqAwXo6VqImacbJ4IwA0+aoH/p4TP890l/zNwwRnhEKRjzBzQZ6hFnA==
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.21.0.tgz#bedcb2c8de6fde224d2af0f37337440e93bdab65"
+  integrity sha512-QHK9Qo4BEYUzC+zIH5ZB6v83FGBegj3jF4XqXB7v+j1ptlmkNOMqt3ULWDnrvDbzzgkSDaPhPl+yZy/8x8JGtw==
   dependencies:
     "@babel/runtime" "^7.10.5"
     "@styled-icons/bootstrap" "^10.19.0"
@@ -9156,11 +9156,11 @@ styled-icons@^10.1.0:
     "@styled-icons/material-rounded" "^10.18.0"
     "@styled-icons/material-sharp" "^10.18.0"
     "@styled-icons/material-twotone" "^10.18.0"
-    "@styled-icons/octicons" "^10.18.0"
+    "@styled-icons/octicons" "^10.20.0"
     "@styled-icons/open-iconic" "^10.18.0"
     "@styled-icons/remix-fill" "^10.18.0"
     "@styled-icons/remix-line" "^10.18.0"
-    "@styled-icons/simple-icons" "^10.18.0"
+    "@styled-icons/simple-icons" "^10.21.0"
     "@styled-icons/styled-icon" "^10.6.0"
     "@styled-icons/typicons" "^10.18.0"
     "@styled-icons/zondicons" "^10.18.0"
