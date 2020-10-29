@@ -59,7 +59,7 @@
     "react-hot-loader": "^4.12.16",
     "react-test-renderer": "^16.11.0",
     "snazzy": "^9.0.0",
-    "standard": "^15.0.0",
+    "standard": "^16.0.0",
     "standard-loader": "^7.0.0",
     "styled-components": "^5.0.0",
     "styled-icons": "^10.1.0",
