@@ -2,7 +2,7 @@
 
 exports[`Menu closed 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 gKyqsi"
+  className="Menu__Container-mw2r80-0 hBDzRf"
   width="300px"
 >
   <div>
@@ -13,7 +13,7 @@ exports[`Menu closed 1`] = `
 
 exports[`Menu custom color 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 iKQzmp"
+  className="Menu__Container-mw2r80-0 kqUPBI"
   width="300px"
 >
   <div>
@@ -24,7 +24,7 @@ exports[`Menu custom color 1`] = `
 
 exports[`Menu custom duration 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 gixDSz"
+  className="Menu__Container-mw2r80-0 ivzDfK"
   width="300px"
 >
   <div>
@@ -35,7 +35,7 @@ exports[`Menu custom duration 1`] = `
 
 exports[`Menu default 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 gixDSz"
+  className="Menu__Container-mw2r80-0 ivzDfK"
   width="300px"
 >
   <div>
@@ -46,7 +46,7 @@ exports[`Menu default 1`] = `
 
 exports[`Menu position left 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 jmaIes"
+  className="Menu__Container-mw2r80-0 kjJPPF"
   width="300px"
 >
   <div>
@@ -57,7 +57,7 @@ exports[`Menu position left 1`] = `
 
 exports[`Menu position left closed 1`] = `
 <div
-  className="Menu__Container-mw2r80-0 yCvJF"
+  className="Menu__Container-mw2r80-0 jPvrcs"
   width="300px"
 >
   <div>
