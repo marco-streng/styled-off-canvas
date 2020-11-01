@@ -10,7 +10,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack/webpack.example.dev.js",
     "build:example": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.example.prod.js",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "standard 'src/**/*.js' --verbose | snazzy",
+    "lint:js": "standard src --verbose | snazzy",
     "lint:styles": "stylelint 'src/**/*.js'",
     "test": "cross-env jest --config config/jest/jest.config.js",
     "build": "webpack --config config/webpack/webpack.lib.js"
