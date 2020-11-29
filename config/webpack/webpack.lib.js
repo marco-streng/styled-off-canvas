@@ -4,7 +4,6 @@ const path = require('path')
 const pkg = require('../../package.json')
 
 module.exports = {
-  entry: './src/index.js',
   mode: 'production',
   module: {
     rules: [
@@ -26,7 +25,6 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, '..', '..', 'dist'),
-    filename: '[name].js',
     libraryTarget: 'commonjs2'
   },
   plugins: [

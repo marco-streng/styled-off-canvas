@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-cli serve --config config/webpack/webpack.example.dev.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --config config/webpack/webpack.example.dev.js",
     "build:example": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.example.prod.js",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "standard src --verbose | snazzy",
