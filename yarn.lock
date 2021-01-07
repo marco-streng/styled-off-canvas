@@ -1364,26 +1364,26 @@
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/ionicons-outline@^10.23.0":
-  version "10.23.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-outline/-/ionicons-outline-10.23.0.tgz#46aba3e30fc7556f167511cc4e0002f0667ae782"
-  integrity sha512-YapEqnJgK0c7jliguo8HEz/1Bz6OC5fXFhxlBLzcJd3mMwO8PlRgCK1voMdNb2MYLznaIVKRsB4lJGTuHPeVaw==
+"@styled-icons/ionicons-outline@^10.24.0":
+  version "10.24.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-outline/-/ionicons-outline-10.24.0.tgz#1bd29e6ccc8e0baf304c1b98e6c128d901682b98"
+  integrity sha512-wVUrfrpmpSp8ah5/WjzSc7mfvLCKG1w3TmaIDSX2Zxxh56D33vptP1Qyg5GmDoSE1JCoQOxQ3DbPBHPcod078g==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/ionicons-sharp@^10.23.0":
-  version "10.23.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-sharp/-/ionicons-sharp-10.23.0.tgz#97c873b1f03dd694d08f5d375151ff55574b1b71"
-  integrity sha512-tH2WUgRbU4PBir8qoQka0r7B+2/RYTRVexl7499ApUq+q8Zb0ZwskiPYf4eqOyviHB+xr1mFQNZhQEKoe/KRig==
+"@styled-icons/ionicons-sharp@^10.24.0":
+  version "10.24.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-sharp/-/ionicons-sharp-10.24.0.tgz#09ac0e5bc8efe5064a50a276f750e0a2242f2f85"
+  integrity sha512-xC3Rz4v/7wYYLMH9m5nZdz2iQi6iYkIZxh93NoZwhNb0sG+k7ycKMDh2QqMDVhkoh6cfodR99ODGlDh2cxgSiQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/ionicons-solid@^10.23.0":
-  version "10.23.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-solid/-/ionicons-solid-10.23.0.tgz#75930b2b180487660b236f09362b602e625bf3e0"
-  integrity sha512-OOztNsPEKON5DFmsd+tyeUas6poolu+ythBaHILEVh+ky67fFckXFP0lYZn2CYh71m9TO3s5VFRV1mqFHipMXA==
+"@styled-icons/ionicons-solid@^10.24.0":
+  version "10.24.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-solid/-/ionicons-solid-10.24.0.tgz#f416992fc9d993b8e44398d8768f18101d967f28"
+  integrity sha512-2FapIeQ2D+IX4qqATJyVuVRKS2mCFphTMWA/W5HSypi5hscAXNm/gtLEOKd4SMKkrIIdN6WfGUTxlwd+xk+KJg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@styled-icons/styled-icon" "^10.6.0"
@@ -1460,10 +1460,10 @@
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/simple-icons@^10.23.0":
-  version "10.23.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.23.0.tgz#89fe4bfd7fdb698700224c03121ce40be58f7a8a"
-  integrity sha512-OqPtYzAmnbZU9jQVA2nNblFP3ydAvZ0tGjj2FgETkG5yHOTtBaCd36+pkJY5Msgrm3c+FgpBr/HHLw9JltrF8w==
+"@styled-icons/simple-icons@^10.24.0":
+  version "10.24.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.24.0.tgz#26624505ea8d1339d89384f34806e3cabe04d06f"
+  integrity sha512-MA+vFkC3cGnf/IfHd8VZ2MR0BC+Nk5KQ3U+VpILI2gSLEQV0KES+TSsMvGjwBasRXlOW2ugTuKMNbq6IhpqcGw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@styled-icons/styled-icon" "^10.6.0"
@@ -8603,9 +8603,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.23.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.23.0.tgz#46c9fc48ce3062dfccd66ecfe7896cac43b83f25"
-  integrity sha512-+Mo0AWrVYf36WItLitdOcVKfEeH1oS16QQsx5O0d2SJLGqF0IhZHB3xNsk/9T3ogrbutFcv2GCS3N1Lxm7sNGw==
+  version "10.24.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.24.0.tgz#9fc99fbd434e1e88e8fecf5ff21f1fb4341396ec"
+  integrity sha512-hO9h2PA+H+XX2E4EbdoSvOKfLe3VbgBUnpIIr1JSJZOF9tho77Fz7wkWGTeIc2WZOIrqTJVzhHGweYIWB4owYQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@styled-icons/bootstrap" "^10.23.0"
@@ -8626,9 +8626,9 @@ styled-icons@^10.1.0:
     "@styled-icons/heroicons-outline" "^10.19.0"
     "@styled-icons/heroicons-solid" "^10.19.0"
     "@styled-icons/icomoon" "^10.18.0"
-    "@styled-icons/ionicons-outline" "^10.23.0"
-    "@styled-icons/ionicons-sharp" "^10.23.0"
-    "@styled-icons/ionicons-solid" "^10.23.0"
+    "@styled-icons/ionicons-outline" "^10.24.0"
+    "@styled-icons/ionicons-sharp" "^10.24.0"
+    "@styled-icons/ionicons-solid" "^10.24.0"
     "@styled-icons/material" "^10.23.0"
     "@styled-icons/material-outlined" "^10.23.0"
     "@styled-icons/material-rounded" "^10.23.0"
@@ -8638,7 +8638,7 @@ styled-icons@^10.1.0:
     "@styled-icons/open-iconic" "^10.18.0"
     "@styled-icons/remix-fill" "^10.18.0"
     "@styled-icons/remix-line" "^10.18.0"
-    "@styled-icons/simple-icons" "^10.23.0"
+    "@styled-icons/simple-icons" "^10.24.0"
     "@styled-icons/styled-icon" "^10.6.0"
     "@styled-icons/typicons" "^10.18.0"
     "@styled-icons/zondicons" "^10.18.0"
