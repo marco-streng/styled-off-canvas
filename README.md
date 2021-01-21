@@ -151,4 +151,4 @@ Open [`localhost:8080`](http://localhost:8080) in your browser.
 
 ## License
 
-Copyright (c) 2020-present Marco Streng. See [LICENSE](./LICENSE.md) for details.
+Copyright (c) 2021-present Marco Streng. See [LICENSE](./LICENSE.md) for details.
