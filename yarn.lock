@@ -873,10 +873,10 @@
     "@babel/plugin-transform-react-jsx-development" "^7.12.12"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
 
-"@babel/runtime@^7.10.5", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4":
-  version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
-  integrity sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
+"@babel/runtime@^7.10.5", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.8.4":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1309,6 +1309,22 @@
   integrity sha512-W8ESG+KLaiCekydTV6LaP3FW5enwvGMSM2T/wvS8HPmnR6tFb4hn8VQrtXG8Bwdc5RmTJ+2eyN6N3KySMfMC4Q==
   dependencies:
     "@babel/runtime" "^7.10.5"
+    "@styled-icons/styled-icon" "^10.6.0"
+
+"@styled-icons/fluentui-system-filled@10.30.0":
+  version "10.30.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/fluentui-system-filled/-/fluentui-system-filled-10.30.0.tgz#6b320558360ea193da3d87f225be31a017b3d284"
+  integrity sha512-GxLG44rY/Th/bzQFVeJQCG7+DTewdMVL/RbtX3RYhrmfHJCTVozKpprG1F3J+UIbH8b3BsZO5nHa9loY9GNzBA==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@styled-icons/styled-icon" "^10.6.0"
+
+"@styled-icons/fluentui-system-regular@10.30.0":
+  version "10.30.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/fluentui-system-regular/-/fluentui-system-regular-10.30.0.tgz#8993140d177a7d8cd81e75ca155858516c7783d9"
+  integrity sha512-MLKLQcgzmqux+cZ+TxLS5cdd5Cdeupxjr0HROTdrmby5HsEH5mBUl5bECUTNNH/N2ISJtp0Q8ncNvgpnqKzq/g==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
     "@styled-icons/styled-icon" "^10.6.0"
 
 "@styled-icons/foundation@10.28.0":
@@ -8709,11 +8725,11 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.29.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.29.0.tgz#d516590535f7dd2d1ad2aebc2f74f54d0a75b2fc"
-  integrity sha512-OlKqKvQvP6JSRIPGpAYh69b7Oj9JYzfuCesKpGj4eqHkC8iV8ibQp8mElIoK6y+5B7+aKSIEbHGRzHH6C7PYpg==
+  version "10.30.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.30.0.tgz#99725c4e21e22f5173716aa5e96596430440c3d9"
+  integrity sha512-TXPEEXQl+bocVv2dJedHCb89rAaiQvGJNLCNkV0+tqbbL3S6g55lbHGusalYHKsAVfJgz/A7NZv7wCbQKnVGKQ==
   dependencies:
-    "@babel/runtime" "^7.12.13"
+    "@babel/runtime" "^7.13.10"
     "@styled-icons/bootstrap" "10.29.0"
     "@styled-icons/boxicons-logos" "10.23.0"
     "@styled-icons/boxicons-regular" "10.23.0"
@@ -8728,6 +8744,8 @@ styled-icons@^10.1.0:
     "@styled-icons/fa-regular" "10.26.0"
     "@styled-icons/fa-solid" "10.26.0"
     "@styled-icons/feather" "10.18.0"
+    "@styled-icons/fluentui-system-filled" "10.30.0"
+    "@styled-icons/fluentui-system-regular" "10.30.0"
     "@styled-icons/foundation" "10.28.0"
     "@styled-icons/heroicons-outline" "10.19.0"
     "@styled-icons/heroicons-solid" "10.19.0"
