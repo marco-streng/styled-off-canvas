@@ -34,7 +34,7 @@ styled-off-canvas is a customizable off-canvas menu built with [React](https://r
 
 ## Demo
 
-A demo can be found here: <a href="https://styled-off-canvas.netlify.com/">Demo</a>
+A demo can be found here: <a href="https://styled-off-canvas.vercel.app/">Demo</a>
 
 ## Installation
 
