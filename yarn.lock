@@ -1538,10 +1538,10 @@
     "@babel/runtime" "^7.14.0"
     "@styled-icons/styled-icon" "^10.6.3"
 
-"@styled-icons/octicons@10.39.0":
-  version "10.39.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.39.0.tgz#21b96b8bb832ae922b53964ce4291b57f98899c9"
-  integrity sha512-//N1lsaOlA0VtBqHPb55eqCwpZ0gPQWTbHubfmESIaf0zmhTaz/HuAgPSSaNXzYbMzmIzyg8bw9UhMeZOFqDcw==
+"@styled-icons/octicons@10.42.0":
+  version "10.42.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.42.0.tgz#bb1b8e937ba365b6085ef2e318d6ac243b7fe7c0"
+  integrity sha512-sRMoq1V+1vBUOOVnPSuAnBcayC1gMvXWggoCJjidBHzVEZXQmARXByoNdsZwFDDGULy+YcOn2wY8wmKSVDR5RA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@styled-icons/styled-icon" "^10.6.3"
@@ -1578,10 +1578,10 @@
     "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
-"@styled-icons/simple-icons@10.40.0":
-  version "10.40.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.40.0.tgz#3c449df2a7d778cda6a056fee06d01d8de74884d"
-  integrity sha512-pBulyj5ody0N4J5rW8a+x4J6tP0BqISO+Ind1FKkf40cHTyKtI5p69ANb1xRoFezZ2GazHbiEWbULmvjUjv5cg==
+"@styled-icons/simple-icons@10.41.0":
+  version "10.41.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/simple-icons/-/simple-icons-10.41.0.tgz#6337c68a45bcc8500517958a418b63b33468e3c2"
+  integrity sha512-0TTX5zI4hPv7CXOaPCvr/dLhcLKKeD77/gF5fd8iTDpLjfZzD6eo5p2TCetSSHiskDYGElVdg7hG2r2Nl4KRoA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@styled-icons/styled-icon" "^10.6.3"
@@ -7791,9 +7791,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.40.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.40.0.tgz#0299f6f352b856cd0b3836c96fc482e165830e84"
-  integrity sha512-6k7GRe8CMx3F8k1paGDlONR9enMj2g0blmoK4nqN9Gsve6li/cxO3ksQeKp0S3bjqfMgm3NBsqQVSTAFP29uow==
+  version "10.42.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.42.0.tgz#480ed9bdc0d9451bf81ffa194cf5cf995bcf346d"
+  integrity sha512-ZwT8ksrTyArjYo/2jTlM0KUAEbISDG9OnDcWVb5pYA2Sw2lOTQgBv3hp7ruArEn8/V5woG1AwCmLP1suauq+JQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@styled-icons/bootstrap" "10.34.0"
@@ -7824,12 +7824,12 @@ styled-icons@^10.1.0:
     "@styled-icons/material-rounded" "10.34.0"
     "@styled-icons/material-sharp" "10.34.0"
     "@styled-icons/material-twotone" "10.34.0"
-    "@styled-icons/octicons" "10.39.0"
+    "@styled-icons/octicons" "10.42.0"
     "@styled-icons/open-iconic" "10.18.0"
     "@styled-icons/remix-editor" "10.33.0"
     "@styled-icons/remix-fill" "10.18.0"
     "@styled-icons/remix-line" "10.18.0"
-    "@styled-icons/simple-icons" "10.40.0"
+    "@styled-icons/simple-icons" "10.41.0"
     "@styled-icons/styled-icon" "10.6.3"
     "@styled-icons/typicons" "10.18.0"
     "@styled-icons/zondicons" "10.18.0"
