@@ -1537,10 +1537,10 @@
     "@babel/runtime" "^7.14.0"
     "@styled-icons/styled-icon" "^10.6.3"
 
-"@styled-icons/octicons@10.42.0":
-  version "10.42.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.42.0.tgz#bb1b8e937ba365b6085ef2e318d6ac243b7fe7c0"
-  integrity sha512-sRMoq1V+1vBUOOVnPSuAnBcayC1gMvXWggoCJjidBHzVEZXQmARXByoNdsZwFDDGULy+YcOn2wY8wmKSVDR5RA==
+"@styled-icons/octicons@10.44.0":
+  version "10.44.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-10.44.0.tgz#d7b6366c74f1fa129914956f6fb83a084c0dee27"
+  integrity sha512-7pLWrUDkc/acwJ4ayL+Xmb7o1j5WUB6nI5dATRPzcm2CENUdEEyf17uL1J9qwB5aFoyDpo7c/UYWtq5QpGpk6A==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@styled-icons/styled-icon" "^10.6.3"
@@ -7795,9 +7795,9 @@ styled-components@^5.0.0:
     supports-color "^5.5.0"
 
 styled-icons@^10.1.0:
-  version "10.43.0"
-  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.43.0.tgz#318f7cf2965dd511cea88c070c658a53ac6cb45a"
-  integrity sha512-LRRqH6DW0KMlrF+GJXW8TJrs8/OlQ4IHsUY0OBTu8As4DOHLz5dSY/BHdMH7yholDGZW9rRZFJ1qN8LCNuX4tQ==
+  version "10.44.0"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-10.44.0.tgz#981dee35ace92882e09c2721b791522ab6f2879a"
+  integrity sha512-MTQnT9cMmJEFKNYvZIQHrwVuBWPKRpYENdDSyswM+KtP/fzUEPzWlq9JKks/pnEtYxNy7rm4jaqZK1i7KDk0Kw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@styled-icons/bootstrap" "10.34.0"
@@ -7828,7 +7828,7 @@ styled-icons@^10.1.0:
     "@styled-icons/material-rounded" "10.34.0"
     "@styled-icons/material-sharp" "10.34.0"
     "@styled-icons/material-twotone" "10.34.0"
-    "@styled-icons/octicons" "10.42.0"
+    "@styled-icons/octicons" "10.44.0"
     "@styled-icons/open-iconic" "10.18.0"
     "@styled-icons/remix-editor" "10.33.0"
     "@styled-icons/remix-fill" "10.18.0"
