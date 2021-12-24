@@ -14,17 +14,11 @@
   <a href="https://github.com/marco-streng/styled-off-canvas/actions">
     <img alt="Node CI build status" src="https://github.com/marco-streng/styled-off-canvas/workflows/Node%20CI/badge.svg">
   </a>
-  <a href="https://app.netlify.com/sites/styled-off-canvas/deploys">
-    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/383a1372-df7f-4f8a-b270-585aea41f0d2/deploy-status">
-  </a>
   <a href="https://standardjs.com">
     <img alt="JavaScript Standard Style" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
   </a>
   <a href="https://www.styled-components.com/">
     <img alt="Built with Styled Components" src="https://img.shields.io/badge/built%20with-styled%20components-db7093.svg">
-  </a>
-  <a href="https://dependabot.com">
-    <img alt="Dependabot Status" src="https://api.dependabot.com/badges/status?host=github&repo=marco-streng/styled-off-canvas">
   </a>
 </p>
 
