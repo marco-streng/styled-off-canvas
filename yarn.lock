@@ -2419,13 +2419,6 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-async@^2.6.2:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.4.tgz#706b7ff6084664cd7eae713f6f965433b5504221"
-  integrity sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==
-  dependencies:
-    lodash "^4.17.14"
-
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -3165,7 +3158,7 @@ debug@4, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   dependencies:
     ms "2.1.2"
 
-debug@^3.1.1, debug@^3.2.7:
+debug@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
@@ -5980,13 +5973,6 @@ minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
-mkdirp@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
-  integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
-  dependencies:
-    minimist "^1.2.5"
-
 moo@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
@@ -6640,15 +6626,6 @@ pkg-up@^2.0.0:
   integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
   dependencies:
     find-up "^2.1.0"
-
-portfinder@^1.0.28:
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
-  integrity sha512-Se+2isanIcEqf2XMHjyUKskczxbPH7dQnlMjXX6+dybayyHvAf/TCgyMRlzf/B6QDhAEFOGes0pzRo3by4AbMA==
-  dependencies:
-    async "^2.6.2"
-    debug "^3.1.1"
-    mkdirp "^0.5.5"
 
 postcss-html@^0.36.0:
   version "0.36.0"
@@ -8525,9 +8502,9 @@ webpack-dev-middleware@^5.3.1:
     schema-utils "^4.0.0"
 
 webpack-dev-server@^4.0.0:
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-4.8.1.tgz#58f9d797710d6e25fa17d6afab8708f958c11a29"
-  integrity sha512-dwld70gkgNJa33czmcj/PlKY/nOy/BimbrgZRaR9vDATBQAYgLzggR0nxDtPLJiLrMgZwbE6RRfJ5vnBBasTyg==
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-4.9.0.tgz#737dbf44335bb8bde68f8f39127fc401c97a1557"
+  integrity sha512-+Nlb39iQSOSsFv0lWUuUTim3jDQO8nhK3E68f//J2r5rIcp4lULHXz2oZ0UVdEeWXEh5lSzYUlzarZhDAeAVQw==
   dependencies:
     "@types/bonjour" "^3.5.9"
     "@types/connect-history-api-fallback" "^1.3.5"
@@ -8549,7 +8526,6 @@ webpack-dev-server@^4.0.0:
     ipaddr.js "^2.0.1"
     open "^8.0.9"
     p-retry "^4.5.0"
-    portfinder "^1.0.28"
     rimraf "^3.0.2"
     schema-utils "^4.0.0"
     selfsigned "^2.0.1"
