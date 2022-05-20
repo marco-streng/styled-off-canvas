@@ -76,7 +76,6 @@
     "webpack-merge": "^5.0.9"
   },
   "standard": {
-    "parser": "babel-eslint",
     "env": [
       "jest"
     ]
