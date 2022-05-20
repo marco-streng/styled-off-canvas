@@ -11,5 +11,7 @@ module.exports = {
     '**/*.test.js'
   ],
   rootDir: '../../',
-  testURL: 'http://localhost'
+  testEnvironmentOptions: {
+    url: 'http://localhost'
+  }
 }
