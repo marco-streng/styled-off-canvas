@@ -33,10 +33,6 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    hot: true,
-    open: true
-  },
   output: {
     path: path.join(__dirname, '..', '..', BUILD_FOLDER)
   },

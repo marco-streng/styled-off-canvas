@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import renderer from './helper/tests/jest'
+import TestRenderer from 'react-test-renderer'
 
 import Provider from './Provider'
 import Menu from './Menu'
@@ -22,7 +22,9 @@ describe('Menu', () => {
   })
 
   test('ssr', () => {
-    const tree = renderer(<Provider onClose={() => {}} isOpen><Menu><div>content</div></Menu></Provider>).toJSON()
+    const tree = TestRenderer.create(
+      <Provider onClose={() => {}} isOpen><Menu><div>content</div></Menu></Provider>
+    ).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
