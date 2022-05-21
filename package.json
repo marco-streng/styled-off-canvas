@@ -32,6 +32,11 @@
   "bugs": {
     "url": "https://github.com/marco-streng/styled-off-canvas/issues"
   },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "styled-components": ">=5"
+  },
   "homepage": "https://github.com/marco-streng/styled-off-canvas#readme",
   "dependencies": {},
   "devDependencies": {
