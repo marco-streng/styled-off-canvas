@@ -1,6 +1,6 @@
 {
   "name": "styled-off-canvas",
-  "version": "1.0.1",
+  "version": "1.1.0-pre",
   "description": "styled components off-canvas menu",
   "main": "dist/main.js",
   "files": [
