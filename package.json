@@ -62,7 +62,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-hot-loader": "^4.12.16",
-    "react-refresh": "^0.13.0",
+    "react-refresh": "^0.14.0",
     "react-test-renderer": "^18.1.0",
     "snazzy": "^9.0.0",
     "standard": "^16.0.0",
