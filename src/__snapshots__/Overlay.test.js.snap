@@ -2,35 +2,35 @@
 
 exports[`Overlay closed 1`] = `
 <div
-  class="Overlay__Div-sc-7f8d3g-0 dEPHLF"
+  class="Overlay__Div-sc-7f8d3g-0 fJejZK"
   opacity="0.2"
 />
 `;
 
 exports[`Overlay custom color 1`] = `
 <div
-  class="Overlay__Div-sc-7f8d3g-0 ippImc"
+  class="Overlay__Div-sc-7f8d3g-0 gKuUYP"
   opacity="0.2"
 />
 `;
 
 exports[`Overlay custom duration 1`] = `
 <div
-  class="Overlay__Div-sc-7f8d3g-0 faOfXh"
+  class="Overlay__Div-sc-7f8d3g-0 esSNxm"
   opacity="0.2"
 />
 `;
 
 exports[`Overlay custom opacity 1`] = `
 <div
-  class="Overlay__Div-sc-7f8d3g-0 hnRav"
+  class="Overlay__Div-sc-7f8d3g-0 bvmpME"
   opacity="0.5"
 />
 `;
 
 exports[`Overlay default 1`] = `
 <div
-  class="Overlay__Div-sc-7f8d3g-0 iiubrE"
+  class="Overlay__Div-sc-7f8d3g-0 hZXACr"
   opacity="0.2"
 />
 `;
