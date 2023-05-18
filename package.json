@@ -72,7 +72,7 @@
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^4.0.0",
+    "stylelint-order": "^6.0.3",
     "stylelint-processor-styled-components": "^1.8.0",
     "stylelint-webpack-plugin": "^3.0.1",
     "webpack": "^5.8.0",
