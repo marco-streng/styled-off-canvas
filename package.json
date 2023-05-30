@@ -65,7 +65,7 @@
     "react-refresh": "^0.14.0",
     "react-test-renderer": "^18.1.0",
     "snazzy": "^9.0.0",
-    "standard": "^16.0.0",
+    "standard": "^17.1.0",
     "standard-loader": "^7.0.0",
     "styled-components": "^5.3.5",
     "styled-icons": "^10.1.0",
