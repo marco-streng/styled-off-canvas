@@ -2,7 +2,11 @@
 
 exports[`Menu ssr 1`] = `
 <div
-  className="Menu__Container-sc-mw2r80-0 fNZZph"
+  background="#fff"
+  className="Menu__Container-sc-mw2r80-0 hMKqmI"
+  duration="500ms"
+  isOpen={true}
+  position="right"
   width="300px"
 >
   <div>
