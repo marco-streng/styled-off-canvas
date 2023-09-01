@@ -4,16 +4,32 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# E2E
+test-results/
+playwright-report/
+playwright/.cache/
+
+
+# Build
+node_modules
+dist
+dist-ssr
+build
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Coverage directory used by tools like istanbul
 coverage
-
-# build
-dist
-build
-
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-.npm

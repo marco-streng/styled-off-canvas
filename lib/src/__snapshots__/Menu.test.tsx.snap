@@ -1,0 +1,121 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu > closed 1`] = `
+<div
+  class="sc-bcPKhP jOHbkx"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu > custom color 1`] = `
+<div
+  class="sc-bcPKhP YnKLm"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu > custom duration 1`] = `
+<div
+  class="sc-bcPKhP kpMjSV"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu > initial open 1`] = `
+<div
+  class="sc-bcPKhP geetHI"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu > position left 1`] = `
+<div
+  class="sc-bcPKhP jDcUtb"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Menu > position left closed 1`] = `
+<div
+  class="sc-bcPKhP iuJvfG"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > closed 1`] = `
+<div
+  class="sc-bcPKhP jOHbkx"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > custom color 1`] = `
+<div
+  class="sc-bcPKhP geetHI"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > custom duration 1`] = `
+<div
+  class="sc-bcPKhP geetHI"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > default 1`] = `
+<div
+  class="sc-bcPKhP geetHI"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > position left 1`] = `
+<div
+  class="sc-bcPKhP geetHI"
+>
+  <div>
+    content
+  </div>
+</div>
+`;
+
+exports[`Overlay > position left closed 1`] = `
+<div
+  class="sc-bcPKhP jOHbkx"
+>
+  <div>
+    content
+  </div>
+</div>
+`;

@@ -1,0 +1,62 @@
+{
+  "name": "styled-off-canvas",
+  "version": "2.0.0-pre",
+  "description": "styled components off-canvas menu",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "main": "dist/styled-off-canvas.cjs.js",
+    "module": "dist/styled-off-canvas.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "test": "vitest --coverage",
+    "build": "ts-node build.ts && tsc --project tsconfig.declaration.json --outdir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marco-streng/styled-off-canvas.git"
+  },
+  "keywords": [
+    "styled-components",
+    "off-canvas",
+    "navigation",
+    "react",
+    "menu",
+    "mobile"
+  ],
+  "author": "Marco Streng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marco-streng/styled-off-canvas/issues"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "styled-components": ">=6"
+  },
+  "homepage": "https://github.com/marco-streng/styled-off-canvas#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-test-renderer": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "@vitest/coverage-v8": "^0.34.3",
+    "esbuild": "^0.19.0",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
+    "jsdom": "^22.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "styled-components": "^6.0.7",
+    "styled-icons": "^10.47.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "vitest": "^0.34.3"
+  }
+}

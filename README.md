@@ -40,15 +40,21 @@ npm install styled-off-canvas
 
 ## Implementation
 
-For more flexibility you will keep the menu state (open or closed) in your application. The example below shows a very simple implementation.
+### Hook
+
+The `useOffCanvas()` hook provies the current state and all methods to contorl the menu.
+
+```javascript
+const { isOpen, toggle, close, open } = useOffCanvas();
+``````
 
 ### Components
 
-`styled-off-canvas` comes with three components: `<StyledOffCanvas />`, `<Menu />` and `<Overlay />`.
+`styled-off-canvas` comes with three components: `<OffCanvasProvider />`, `<Menu />` and `<Overlay />`.
 
-`<StyledOffCanvas />` is a wrapping component which provides all settings/properties.
+`<OffCanvasProvider />` is a wrapping component which provides the menus context.
 
-`<Menu />` is the off-canvas menu itself. You can pass anything you want as children (e.g. styled list of react-router links)
+`<Menu />` is the off-canvas menu itself. You can pass anything you want as children (e.g. styled list of router links)
 
 `<Overlay />` is an optional component which renders a semi-transparent layer above your app content.
 
@@ -58,55 +64,57 @@ For more flexibility you will keep the menu state (open or closed) in your appli
 import React, { useState } from 'react'
 import { StyledOffCanvas, Menu, Overlay } from 'styled-off-canvas'
 
-const App = () => {
-  const [isOpen, setIsOpen] = useState(false)
+const Navigation = () => {
+  const { close } = useOffCanvas();
 
   return (
-    <StyledOffCanvas
-      isOpen={isOpen}
-      onClose={() => setIsOpen(false)}
-    >
+    <Menu closeOnEsc>
+      <CrossIcon onClick={() => close()} />
+      <List />
+    </Menu>
+  );
+};
 
-      <button onClick={() => setIsOpen(!isOpen)}>Toggle menu</button>
+const Burger = () => {
+  const { isOpen, toggle } = useOffCanvas();
 
-      <Menu>
-        <ul>
-          <li>
-            <a onClick={() => setIsOpen(false)}>close</a>
-          </li>
-          <li>
-            <a href='/about'>About</a>
-          </li>
-          <li>
-            <a href='/contact'>Contact</a>
-          </li>
-        </ul>
-      </Menu>
+  return (
+    <BurgerIcon onClick={() => toggle()} />
+  );
+};
 
-      <Overlay />
+const App = () => {
+  return (
+    <Container>
+      <Burger />
+      <Navigation />
 
       <div>this is some nice content!</div>
-    </StyledOffCanvas>
-  )
-}
+
+      <Overlay />
+    </Container>
+  );
+};
 
 export default App
 ```
 
 ### Properties
 
-`<StyledOffCanvas />` component
+`<Menu />` component
 
-* `isOpen = false`:  if the menu should be visible or not
-* `menuBackground = '#fff'`: background color of the menu
-* `menuDuration = '500ms'`: duration of the css transition of the menu
-* `onClose`: callback function if menu closes (e.g. by click on the overlay)
+* `background = '#fff'`: background color of the menu
+* `duration = '500ms'`: duration of the css transition of the menu
 * `closeOnEsc = true`: if the menu should close on esc keydown
-* `overlayBackground = '#000'`: background color of the overlay
-* `overlayDuration = '500ms'`: duration of the open/close animation of the overlay
-* `overlayOpacity = 0.2`: css opacity of the overlay
 * `position = 'right'`: position of the menu (`left` or `right`)
 * `width = '300px'`: maximum width of the menu
+* `onClose`: callback function if menu closes (e.g. by click on the overlay)
+
+`<Overlay />` component
+
+* `background = '#000'`: background color of the overlay
+* `duration = '500ms'`: duration of the open/close animation of the overlay
+* `opacity = 0.3`: css opacity of the overlay
 
 Also `<Menu />` and `<Overlay />` can additionally be customized with styled-components
 
@@ -115,34 +123,15 @@ Also `<Menu />` and `<Overlay />` can additionally be customized with styled-com
 
 <Menu css={{ border: `1px solid ${theme.menu.borderColor}` }}>...</Menu>
 ```
-
-## Local development
-
-Install dependencies and start the development server
-
-```
-yarn
-yarn dev
-```
-
-or via npm
-
-```
-npm install
-npm run dev
-```
-
-Open [`localhost:8080`](http://localhost:8080) in your browser.
-
 ## Resources
 
 * https://reactjs.org/
-* https://www.styled-components.com/
-* https://jestjs.io/
-* https://webpack.js.org/
-* https://standardjs.com/
-* https://stylelint.io/
+* https://styled-components.com/
+* https://vitejs.dev/
+* https://vitest.dev/
+* https://esbuild.github.io/
+* https://eslint.org/
 
 ## License
 
-Copyright (c) 2021-present Marco Streng. See [LICENSE](./LICENSE.md) for details.
+Copyright (c) 2023-present Marco Streng. See [LICENSE](./LICENSE.md) for details.

@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Overlay > default 1`] = `
+<div
+  class="sc-bcPKhP kTnuZp"
+/>
+`;
