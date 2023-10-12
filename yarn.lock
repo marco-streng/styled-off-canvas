@@ -7977,9 +7977,9 @@ style-search@^0.1.0:
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
 styled-components@^6.0.7:
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-6.0.7.tgz#1cf4a5e6b6181b29f941934df54af19b7ef05ab0"
-  integrity sha512-xIwWuiRMYR43mskVsW9MGTRjSo7ol4bcVjT595fGUp3OLBJOlOgaiKaxsHdC4a2HqWKqKnh0CmcRbk5ogyDjTg==
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-6.0.9.tgz#97edc032ecdb3d362c081175e3aa218a69ef265c"
+  integrity sha512-dDEXXF66b4iQhI1YHgvkBqfdJPGj2EifyLd298PVs50nz7KDfBKnAmWVnkZtw6+Nb6Izf19BAUyfYy8p434JAg==
   dependencies:
     "@babel/cli" "^7.21.0"
     "@babel/core" "^7.21.0"
