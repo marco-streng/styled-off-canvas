@@ -2,7 +2,7 @@
 
 exports[`Menu > closed 1`] = `
 <div
-  class="sc-bcPKhP jOHbkx"
+  class="sc-bcXGCL hNHwdq"
 >
   <div>
     content
@@ -12,7 +12,7 @@ exports[`Menu > closed 1`] = `
 
 exports[`Menu > custom color 1`] = `
 <div
-  class="sc-bcPKhP YnKLm"
+  class="sc-bcXGCL czsTlN"
 >
   <div>
     content
@@ -22,7 +22,7 @@ exports[`Menu > custom color 1`] = `
 
 exports[`Menu > custom duration 1`] = `
 <div
-  class="sc-bcPKhP kpMjSV"
+  class="sc-bcXGCL eeJWaS"
 >
   <div>
     content
@@ -32,7 +32,7 @@ exports[`Menu > custom duration 1`] = `
 
 exports[`Menu > initial open 1`] = `
 <div
-  class="sc-bcPKhP geetHI"
+  class="sc-bcXGCL hZteQD"
 >
   <div>
     content
@@ -42,7 +42,7 @@ exports[`Menu > initial open 1`] = `
 
 exports[`Menu > position left 1`] = `
 <div
-  class="sc-bcPKhP jDcUtb"
+  class="sc-bcXGCL dwILLQ"
 >
   <div>
     content
@@ -52,67 +52,7 @@ exports[`Menu > position left 1`] = `
 
 exports[`Menu > position left closed 1`] = `
 <div
-  class="sc-bcPKhP iuJvfG"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > closed 1`] = `
-<div
-  class="sc-bcPKhP jOHbkx"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > custom color 1`] = `
-<div
-  class="sc-bcPKhP geetHI"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > custom duration 1`] = `
-<div
-  class="sc-bcPKhP geetHI"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > default 1`] = `
-<div
-  class="sc-bcPKhP geetHI"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > position left 1`] = `
-<div
-  class="sc-bcPKhP geetHI"
->
-  <div>
-    content
-  </div>
-</div>
-`;
-
-exports[`Overlay > position left closed 1`] = `
-<div
-  class="sc-bcPKhP jOHbkx"
+  class="sc-bcXGCL dKmNBl"
 >
   <div>
     content

@@ -2,30 +2,30 @@
 
 exports[`Overlay > custom color 1`] = `
 <div
-  class="sc-bcPKhP usPze"
+  class="sc-bcXGCL eOtzel"
 />
 `;
 
 exports[`Overlay > custom duration 1`] = `
 <div
-  class="sc-bcPKhP hdYuDo"
+  class="sc-bcXGCL jnOqTT"
 />
 `;
 
 exports[`Overlay > custom opacity 1`] = `
 <div
-  class="sc-bcPKhP gnDHcf"
+  class="sc-bcXGCL iNTyhs"
 />
 `;
 
 exports[`Overlay > default 1`] = `
 <div
-  class="sc-bcPKhP kTnuZp"
+  class="sc-bcXGCL eXsjSi"
 />
 `;
 
 exports[`Overlay > initial open 1`] = `
 <div
-  class="sc-bcPKhP ibvpLN"
+  class="sc-bcXGCL imPxyi"
 />
 `;
