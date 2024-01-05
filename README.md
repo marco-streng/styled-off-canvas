@@ -33,9 +33,11 @@ A demo can be found here: <a href="https://styled-off-canvas.vercel.app/">Demo</
 ## Installation
 
 ```
-yarn install styled-off-canvas
-# or via npm
+# via npm
 npm install styled-off-canvas
+
+# via yarn
+yarn install styled-off-canvas
 ```
 
 ## Implementation
@@ -123,15 +125,7 @@ Also `<Menu />` and `<Overlay />` can additionally be customized with styled-com
 
 <Menu css={{ border: `1px solid ${theme.menu.borderColor}` }}>...</Menu>
 ```
-## Resources
-
-* https://reactjs.org/
-* https://styled-components.com/
-* https://vitejs.dev/
-* https://vitest.dev/
-* https://esbuild.github.io/
-* https://eslint.org/
 
 ## License
 
-Copyright (c) 2023-present Marco Streng. See [LICENSE](./LICENSE.md) for details.
+Copyright (c) 2024-present Marco Streng. See [LICENSE](./LICENSE.md) for details.
