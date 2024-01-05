@@ -77,7 +77,7 @@ const OffCanvasProvider = ({
 const useOffCanvas = () => {
   const context = React.useContext(OffCanvasStateContext);
   if (context === undefined) {
-    throw new Error("useOffCanvas must be used within a OffCanvasProvider");
+    throw new Error("useOffCanvas must be used within an OffCanvasProvider");
   }
   return context;
 };
