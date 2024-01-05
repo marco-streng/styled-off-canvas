@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "styled components off-canvas menu",
   "main": "src/index.ts",
+  "files": [
+    "dist/**"
+  ],
   "publishConfig": {
     "main": "dist/styled-off-canvas.cjs.js",
     "module": "dist/styled-off-canvas.esm.js",
