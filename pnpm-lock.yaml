@@ -17,21 +17,9 @@ importers:
       '@commitlint/types':
         specifier: ^18.4.4
         version: 18.4.4
-      '@semantic-release/changelog':
-        specifier: ^6.0.3
-        version: 6.0.3(semantic-release@20.1.3)
-      '@semantic-release/git':
-        specifier: ^10.0.1
-        version: 10.0.1(semantic-release@20.1.3)
-      '@types/semantic-release':
-        specifier: ^20.0.6
-        version: 20.0.6
       husky:
         specifier: ^8.0.3
         version: 8.0.3
-      semantic-release:
-        specifier: ^20.1.3
-        version: 20.1.3(typescript@5.3.3)
 
   demo:
     dependencies:
@@ -96,6 +84,12 @@ importers:
 
   lib:
     devDependencies:
+      '@semantic-release/changelog':
+        specifier: ^6.0.3
+        version: 6.0.3(semantic-release@20.1.3)
+      '@semantic-release/git':
+        specifier: ^10.0.1
+        version: 10.0.1(semantic-release@20.1.3)
       '@testing-library/jest-dom':
         specifier: ^6.2.0
         version: 6.2.0(vitest@0.34.3)
@@ -114,6 +108,9 @@ importers:
       '@types/react-test-renderer':
         specifier: ^18.0.7
         version: 18.0.7
+      '@types/semantic-release':
+        specifier: ^20.0.6
+        version: 20.0.6
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.17.0
         version: 6.17.0(@typescript-eslint/parser@6.17.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -144,12 +141,18 @@ importers:
       react-test-renderer:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      semantic-release:
+        specifier: ^20.1.3
+        version: 20.1.3(typescript@5.3.3)
       styled-components:
         specifier: ^6.1.6
         version: 6.1.6(react-dom@18.2.0)(react@18.2.0)
       styled-icons:
         specifier: ^10.47.0
         version: 10.47.0(react@18.2.0)(styled-components@6.1.6)
+      styled-off-canvas-publish:
+        specifier: workspace:*
+        version: link:../publish
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.10.6)(typescript@5.3.3)
@@ -159,6 +162,21 @@ importers:
       vitest:
         specifier: ^0.34.3
         version: 0.34.3(jsdom@23.0.1)
+
+  publish:
+    devDependencies:
+      '@types/semantic-release':
+        specifier: ^20.0.6
+        version: 20.0.6
+      esbuild:
+        specifier: ^0.19.11
+        version: 0.19.11
+      execa:
+        specifier: ^8.0.1
+        version: 8.0.1
+      semantic-release:
+        specifier: ^20.1.3
+        version: 20.1.3(typescript@5.3.3)
 
 packages:
 
@@ -3605,6 +3623,21 @@ packages:
       strip-final-newline: 3.0.0
     dev: true
 
+  /execa@8.0.1:
+    resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
+    engines: {node: '>=16.17'}
+    dependencies:
+      cross-spawn: 7.0.3
+      get-stream: 8.0.1
+      human-signals: 5.0.0
+      is-stream: 3.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 5.2.0
+      onetime: 6.0.0
+      signal-exit: 4.1.0
+      strip-final-newline: 3.0.0
+    dev: true
+
   /fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
@@ -3823,6 +3856,11 @@ packages:
   /get-stream@6.0.1:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
     engines: {node: '>=10'}
+    dev: true
+
+  /get-stream@8.0.1:
+    resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
+    engines: {node: '>=16'}
     dev: true
 
   /get-symbol-description@1.0.0:
@@ -4079,6 +4117,11 @@ packages:
   /human-signals@4.3.1:
     resolution: {integrity: sha512-nZXjEF2nbo7lIw3mgYjItAfgQXog3OjJogSbKa2CQIIvSGWcKgeJnQlNXip6NglNzYH45nSRiEVimMvYL8DDqQ==}
     engines: {node: '>=14.18.0'}
+    dev: true
+
+  /human-signals@5.0.0:
+    resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
+    engines: {node: '>=16.17.0'}
     dev: true
 
   /husky@8.0.3:
@@ -5914,6 +5957,11 @@ packages:
 
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: true
+
+  /signal-exit@4.1.0:
+    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
+    engines: {node: '>=14'}
     dev: true
 
   /signale@1.4.0:
