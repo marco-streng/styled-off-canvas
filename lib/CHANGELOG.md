@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.1...v2.0.2) (2024-01-05)
+
+
+### Bug Fixes
+
+* add files property ([1a8bf14](https://github.com/marco-streng/styled-off-canvas/commit/1a8bf14412e6941664318b42010fe39184c68785))
+
 ## [2.0.1](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.0...v2.0.1) (2024-01-05)
 
 
