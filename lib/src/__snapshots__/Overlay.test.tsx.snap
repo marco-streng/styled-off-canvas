@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Overlay > custom color 1`] = `
+<div
+  class="sc-bcPKhP usPze"
+/>
+`;
+
+exports[`Overlay > custom duration 1`] = `
+<div
+  class="sc-bcPKhP hdYuDo"
+/>
+`;
+
+exports[`Overlay > custom opacity 1`] = `
+<div
+  class="sc-bcPKhP gnDHcf"
+/>
+`;
+
+exports[`Overlay > default 1`] = `
+<div
+  class="sc-bcPKhP kTnuZp"
+/>
+`;
+
+exports[`Overlay > initial open 1`] = `
+<div
+  class="sc-bcPKhP ibvpLN"
+/>
+`;

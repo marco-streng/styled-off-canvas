@@ -5,44 +5,116 @@ on:
     types: [created]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: yarn install
-      - run: yarn lint
-      - run: yarn test
-      - run: yarn build
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Lint
+        run: pnpm --filter "styled-off-canvas" run lint
+
+      - name: Unit test
+        run: pnpm --filter "styled-off-canvas" run test
+
+      - name: Build
+        run: pnpm --filter "styled-off-canvas" run build
+
+      - name: Install Playwright Browsers
+        run: |
+          cd e2e
+          npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      - uses: actions/upload-artifact@v3
+        name: Upload report
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: publish prerelease
         if: "github.event.release.prerelease"
         run: |
-          yarn install
-          yarn lint
-          yarn test
-          yarn build
-          npm publish --tag next
+          pnpm i
+          pnpm --filter "styled-off-canvas" run lint
+          pnpm --filter "styled-off-canvas" run test
+          pnpm --filter "styled-off-canvas" run build
+          cd lib
+          pnpm publish --tag next
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
       - name: publish release
         if: "!github.event.release.prerelease"
         run: |
-          yarn install
-          yarn lint
-          yarn test
-          yarn build
-          npm publish
+          pnpm i
+          pnpm --filter "styled-off-canvas" run lint
+          pnpm --filter "styled-off-canvas" run test
+          pnpm --filter "styled-off-canvas" run build
+          cd lib
+          pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
