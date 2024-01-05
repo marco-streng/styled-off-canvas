@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.2...v2.0.3) (2024-01-05)
+
+
+### Bug Fixes
+
+* add missing build step to pipeline ([a38828d](https://github.com/marco-streng/styled-off-canvas/commit/a38828dd50ad18d3017aee36d71d744866951e67))
+
 ## [2.0.2](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.1...v2.0.2) (2024-01-05)
 
 
