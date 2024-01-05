@@ -105,7 +105,7 @@ jobs:
           pnpm --filter "styled-off-canvas" run test
           pnpm --filter "styled-off-canvas" run build
           cd lib
-          pnpm publish --tag next
+          pnpm publish --no-git-checks --tag next
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
@@ -117,6 +117,6 @@ jobs:
           pnpm --filter "styled-off-canvas" run test
           pnpm --filter "styled-off-canvas" run build
           cd lib
-          pnpm publish
+          pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
