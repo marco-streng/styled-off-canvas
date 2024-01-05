@@ -19,6 +19,10 @@
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@commitlint/types": "^18.4.4",
-    "husky": "^8.0.3"
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/semantic-release": "^20.0.6",
+    "husky": "^8.0.3",
+    "semantic-release": "^20.1.3"
   }
 }

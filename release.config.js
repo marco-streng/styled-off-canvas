@@ -20,8 +20,12 @@ module.exports = {
         changelogFile: "CHANGELOG.md",
       },
     ],
-    "@semantic-release/npm",
-    "@semantic-release/github",
+    [
+      "@semantic-release/npm",
+      {
+        pkgRoot: "lib",
+      },
+    ],
     [
       "@semantic-release/git",
       {
