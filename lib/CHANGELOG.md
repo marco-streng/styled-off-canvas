@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.5...v2.0.6) (2024-01-07)
+
+
+### Bug Fixes
+
+* remove invalid custom plugin ([04eb30c](https://github.com/marco-streng/styled-off-canvas/commit/04eb30c4d589f9818ab7182e553a27de634dfe51))
+
 ## [2.0.5](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.4...v2.0.5) (2024-01-07)
 
 
