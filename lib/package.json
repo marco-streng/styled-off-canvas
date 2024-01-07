@@ -65,6 +65,7 @@
     "styled-icons": "^10.47.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.3",
+    "styled-off-canvas-publish": "workspace:*"
   }
 }
