@@ -3,6 +3,14 @@
 
 ### Bug Fixes
 
+* use exec plugin to publish to npm ([e383fa9](https://github.com/marco-streng/styled-off-canvas/commit/e383fa94b6caa09415dd6c7e76989f9b46eb22fe))
+* use exec plugin to publish to npm ([b17e97d](https://github.com/marco-streng/styled-off-canvas/commit/b17e97d9ae3d57cbf9f5cf75a28fe4eb09b2b577))
+
+## [2.0.7](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.6...v2.0.7) (2024-01-07)
+
+
+### Bug Fixes
+
 * use exec plugin to publish to npm ([b17e97d](https://github.com/marco-streng/styled-off-canvas/commit/b17e97d9ae3d57cbf9f5cf75a28fe4eb09b2b577))
 
 ## [2.0.6](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.5...v2.0.6) (2024-01-07)
