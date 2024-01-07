@@ -14,9 +14,6 @@
   <a href="https://github.com/marco-streng/styled-off-canvas/actions">
     <img alt="Node CI build status" src="https://github.com/marco-streng/styled-off-canvas/workflows/Node%20CI/badge.svg">
   </a>
-  <a href="https://standardjs.com">
-    <img alt="JavaScript Standard Style" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
-  </a>
   <a href="https://www.styled-components.com/">
     <img alt="Built with Styled Components" src="https://img.shields.io/badge/built%20with-styled%20components-db7093.svg">
   </a>
