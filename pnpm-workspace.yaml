@@ -2,4 +2,3 @@ packages:
   - 'lib/**'
   - 'demo/**'
   - 'e2e/**'
-  - 'publish/**'
