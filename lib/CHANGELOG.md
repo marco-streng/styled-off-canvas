@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.4...v2.0.5) (2024-01-07)
+
+
+### Bug Fixes
+
+* add custom publish plugin ([46c22ae](https://github.com/marco-streng/styled-off-canvas/commit/46c22ae85904ec5e415b2a060a48c4d1f898e903))
+
 ## [2.0.3](https://github.com/marco-streng/styled-off-canvas/compare/v2.0.2...v2.0.3) (2024-01-05)
 
 
