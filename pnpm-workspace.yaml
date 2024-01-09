@@ -1,5 +1,5 @@
 packages:
-  - 'lib/**'
-  - 'demo/**'
-  - 'e2e/**'
-  - 'publish/**'
+  - 'packages/lib/**'
+  - 'packages/demo/**'
+  - 'packages/e2e/**'
+  - 'packages/publish/**'
