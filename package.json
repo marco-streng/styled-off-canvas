@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/marco-streng/styled-off-canvas#readme",
   "devDependencies": {
-    "@commitlint/cli": "^18.6.1",
+    "@commitlint/cli": "^19.0.1",
     "@commitlint/config-conventional": "^18.6.2",
     "@commitlint/types": "^18.6.1",
     "husky": "^8.0.3"
