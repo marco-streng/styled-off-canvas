@@ -15,8 +15,8 @@ importers:
         specifier: ^19.2.2
         version: 19.2.2
       '@commitlint/types':
-        specifier: ^19.0.3
-        version: 19.0.3
+        specifier: ^19.5.0
+        version: 19.5.0
       husky:
         specifier: ^9.1.5
         version: 9.1.5
@@ -439,7 +439,7 @@ packages:
       '@commitlint/lint': 19.2.2
       '@commitlint/load': 19.2.0(@types/node@20.10.6)(typescript@5.3.3)
       '@commitlint/read': 19.2.1
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       execa: 8.0.1
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -451,7 +451,7 @@ packages:
     resolution: {integrity: sha512-mLXjsxUVLYEGgzbxbxicGPggDuyWNkf25Ht23owXIH+zV2pv1eJuzLK3t1gDY5Gp6pxdE60jZnWUY5cvgL3ufw==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       conventional-changelog-conventionalcommits: 7.0.2
     dev: true
 
@@ -459,7 +459,7 @@ packages:
     resolution: {integrity: sha512-2D3r4PKjoo59zBc2auodrSCaUnCSALCx54yveOFwwP/i2kfEAQrygwOleFWswLqK0UL/F9r07MFi5ev2ohyM4Q==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       ajv: 8.12.0
     dev: true
 
@@ -467,7 +467,7 @@ packages:
     resolution: {integrity: sha512-SZEpa/VvBLoT+EFZVb91YWbmaZ/9rPH3ESrINOl0HD2kMYsjvl0tF7nMHh0EpTcv4+gTtZBAe1y/SS6/OhfZzQ==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       lodash.camelcase: 4.3.0
       lodash.kebabcase: 4.1.1
       lodash.snakecase: 4.1.1
@@ -484,7 +484,7 @@ packages:
     resolution: {integrity: sha512-luguk5/aF68HiF4H23ACAfk8qS8AHxl4LLN5oxPc24H+2+JRPsNr1OS3Gaea0CrH7PKhArBMKBz5RX9sA5NtTg==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       chalk: 5.3.0
     dev: true
 
@@ -492,7 +492,7 @@ packages:
     resolution: {integrity: sha512-eNX54oXMVxncORywF4ZPFtJoBm3Tvp111tg1xf4zWXGfhBPKpfKG6R+G3G4v5CPlRROXpAOpQ3HMhA9n1Tck1g==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       semver: 7.6.0
     dev: true
 
@@ -503,7 +503,7 @@ packages:
       '@commitlint/is-ignored': 19.2.2
       '@commitlint/parse': 19.0.3
       '@commitlint/rules': 19.0.3
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
     dev: true
 
   /@commitlint/load@19.2.0(@types/node@20.10.6)(typescript@5.3.3):
@@ -513,7 +513,7 @@ packages:
       '@commitlint/config-validator': 19.0.3
       '@commitlint/execute-rule': 19.0.0
       '@commitlint/resolve-extends': 19.1.0
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.3.3)
       cosmiconfig-typescript-loader: 5.0.0(@types/node@20.10.6)(cosmiconfig@9.0.0)(typescript@5.3.3)
@@ -534,7 +534,7 @@ packages:
     resolution: {integrity: sha512-Il+tNyOb8VDxN3P6XoBBwWJtKKGzHlitEuXA5BP6ir/3loWlsSqDr5aecl6hZcC/spjq4pHqNh0qPlfeWu38QA==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       conventional-changelog-angular: 7.0.0
       conventional-commits-parser: 5.0.0
     dev: true
@@ -544,7 +544,7 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/top-level': 19.0.0
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       execa: 8.0.1
       git-raw-commits: 4.0.0
       minimist: 1.2.8
@@ -555,7 +555,7 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/config-validator': 19.0.3
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       global-directory: 4.0.1
       import-meta-resolve: 4.0.0
       lodash.mergewith: 4.6.2
@@ -569,7 +569,7 @@ packages:
       '@commitlint/ensure': 19.0.3
       '@commitlint/message': 19.0.0
       '@commitlint/to-lines': 19.0.0
-      '@commitlint/types': 19.0.3
+      '@commitlint/types': 19.5.0
       execa: 8.0.1
     dev: true
 
@@ -585,8 +585,8 @@ packages:
       find-up: 7.0.0
     dev: true
 
-  /@commitlint/types@19.0.3:
-    resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
+  /@commitlint/types@19.5.0:
+    resolution: {integrity: sha512-DSHae2obMSMkAtTBSOulg5X7/z+rGLxcXQIkg3OmWvY6wifojge5uVMydfhUvs7yQj+V7jNmRZ2Xzl8GJyqRgg==}
     engines: {node: '>=v18'}
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
