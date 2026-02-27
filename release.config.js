@@ -4,7 +4,11 @@
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  branches: ["main"],
+  branches: [
+    "main",
+    { name: "beta", prerelease: true },
+    { name: "alpha", prerelease: true }
+  ],
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -14,8 +18,12 @@ module.exports = {
         changelogFile: "CHANGELOG.md",
       },
     ],
-    // publish command currently not working fine with pnpm -> use custom plugin as workaround
-    "styled-off-canvas-publish", // "@semantic-release/npm",
+    [
+      '@semantic-release/npm',
+      {
+        pkgRoot: 'packages/lib'
+      }
+    ],
     [
       "@semantic-release/github",
       {
