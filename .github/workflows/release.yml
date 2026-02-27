@@ -104,6 +104,9 @@ jobs:
       - name: Build
         run: pnpm --filter "styled-off-canvas" run build
 
+      - name: Copy README into lib package
+        run: cp README.md packages/lib/README.md
+
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
