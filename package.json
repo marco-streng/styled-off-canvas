@@ -18,7 +18,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@commitlint/types": "^19.0.3",
+    "@commitlint/types": "^20.4.0",
     "husky": "^9.1.5"
   },
   "packageManager": "pnpm@8.15.4"
