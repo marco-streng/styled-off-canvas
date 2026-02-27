@@ -19,12 +19,6 @@ module.exports = {
       },
     ],
     [
-      '@semantic-release/exec',
-      {
-        prepareCmd: 'pnpm --filter styled-off-canvas build:package'
-      }
-    ],
-    [
       '@semantic-release/npm',
       {
         pkgRoot: 'packages/lib'

@@ -2,20 +2,27 @@
   "name": "styled-off-canvas",
   "version": "0.0.0-development",
   "description": "styled components off-canvas menu",
-  "main": "src/index.ts",
+  "type": "module",
+  "main": "dist/styled-off-canvas.cjs.js",
+  "module": "dist/styled-off-canvas.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/**"
   ],
-  "publishConfig": {
-    "main": "dist/styled-off-canvas.cjs.js",
-    "module": "dist/styled-off-canvas.esm.js",
-    "types": "dist/index.d.ts"
-  },
   "scripts": {
     "lint": "eslint",
     "test": "vitest --coverage",
-    "build": "ts-node build.ts && tsc --project tsconfig.declaration.json --outdir dist",
-    "build:package": "esbuild src/index.ts --bundle --platform=node --target=node18 --outdir=dist"
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "build": "ts-node build.ts"
   },
   "repository": {
     "type": "git",
@@ -58,6 +65,7 @@
     "react-dom": "^19.2.4",
     "styled-components": "^6.1.6",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
     "typescript": "^5.3.3",
     "vitest": "^4.0.18"
   }
