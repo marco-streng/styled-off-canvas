@@ -14,7 +14,8 @@
   "scripts": {
     "lint": "eslint",
     "test": "vitest --coverage",
-    "build": "ts-node build.ts && tsc --project tsconfig.declaration.json --outdir dist"
+    "build": "ts-node build.ts && tsc --project tsconfig.declaration.json --outdir dist",
+    "build:package": "esbuild src/index.ts --bundle --platform=node --target=node18 --outdir=dist"
   },
   "repository": {
     "type": "git",
