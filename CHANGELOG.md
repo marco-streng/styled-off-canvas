@@ -1,3 +1,10 @@
+# [2.1.0-beta.3](https://github.com/marco-streng/styled-off-canvas/compare/v2.1.0-beta.2...v2.1.0-beta.3) (2026-02-27)
+
+
+### Bug Fixes
+
+* **ci:** build package ([0b095b2](https://github.com/marco-streng/styled-off-canvas/commit/0b095b212db6b908b96f25331d241130f8cdc3fd))
+
 # [2.1.0-beta.2](https://github.com/marco-streng/styled-off-canvas/compare/v2.1.0-beta.1...v2.1.0-beta.2) (2026-02-27)
 
 
