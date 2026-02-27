@@ -5,7 +5,7 @@
     "url": "git+https://github.com/marco-streng/styled-off-canvas.git"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "dev": "pnpm --filter 'styled-off-canvas-demo' run dev",
     "build:demo": "pnpm --filter 'styled-off-canvas' run build && pnpm --filter 'styled-off-canvas-demo' run build"
   },

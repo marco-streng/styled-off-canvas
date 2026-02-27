@@ -65,6 +65,8 @@ export const Menu = ({
 
   // Avoid scrolling on content when the navigation is open
   React.useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const bodyElStyle = window.document.body.style;
 
     if (isOpen) {
@@ -76,19 +78,25 @@ export const Menu = ({
     }
   }, [isOpen]);
 
-  if (closeOnEsc) {
-    React.useEffect(() => {
-      const handleKeyDown = (event: KeyboardEvent) => {
-        if (event.code.toLowerCase() === "escape") {
-          close();
-        }
-      };
+  React.useEffect(() => {
+    if (!closeOnEsc || typeof window === "undefined") return;
 
-      isOpen
-        ? window.document.addEventListener("keydown", handleKeyDown)
-        : window.document.removeEventListener("keydown", handleKeyDown);
-    }, [isOpen]);
-  }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.code.toLowerCase() === "escape") {
+        close();
+      }
+    };
+
+    if (isOpen) {
+      window.document.addEventListener("keydown", handleKeyDown);
+    } else {
+      window.document.removeEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [closeOnEsc, isOpen, close]);
 
   return (
     <Container
