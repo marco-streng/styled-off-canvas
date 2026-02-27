@@ -2,6 +2,15 @@ name: Release
 
 on:
   workflow_dispatch:
+    inputs:
+      release-type:
+        description: 'Release type'
+        required: true
+        type: choice
+        options:
+          - release
+          - pre-release
+        default: release
 
 jobs:
   build-and-test:
@@ -70,6 +79,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout pre-release branch
+        if: ${{ github.event.inputs.release-type == 'pre-release' }}
+        run: |
+          git checkout -B pre
+          git push -u origin pre --force
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -109,3 +126,8 @@ jobs:
         run: |
           cd packages/lib
           npx semantic-release
+
+      - name: Cleanup pre-release branch
+        if: ${{ github.event.inputs.release-type == 'pre-release' && success() }}
+        run: |
+          git push origin --delete pre || true
